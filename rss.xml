@@ -1,0 +1,1294 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>江程训</title>
+	<atom:link href="https://censujiang.com/feed" rel="self" type="application/rss+xml" />
+	<link>https://censujiang.com</link>
+	<description></description>
+	<lastBuildDate>Tue, 14 May 2019 17:15:59 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.0.4</generator>
+
+<image>
+	<url>https://censu.oss-cn-hongkong.aliyuncs.com/2018/07/cropped-640-3.jpg?x-oss-process=image/quality,q_50/resize,m_fill,w_32,h_32</url>
+	<title>江程训</title>
+	<link>https://censujiang.com</link>
+	<width>32</width>
+	<height>32</height>
+</image>
+	<item>
+		<title>如何做到输入邮箱就能在其他人的网站评论区显示头像</title>
+		<link>https://censujiang.com/411</link>
+		<comments>https://censujiang.com/411#comments</comments>
+		<pubDate>Fri, 03 May 2019 07:36:35 +0000</pubDate>
+		<dc:creator><![CDATA[江程训]]></dc:creator>
+				<category><![CDATA[wordpress/前端]]></category>
+		<category><![CDATA[Gravatar]]></category>
+		<category><![CDATA[wordpress]]></category>
+		<category><![CDATA[教程]]></category>
+		<category><![CDATA[混圈技巧]]></category>
+
+		<guid isPermaLink="false">https://censujiang.com/?p=411</guid>
+		<description><![CDATA[有些时候，我们在一些同学的个人网站下面发表评论，也许会注意到一些问题。 大家可能会注意到一些问题，那就是为什么评论区里面，有些人有头像，有些人没有头像呢？ 可能有些同学会说了，别人当然是已经提前注册好账号并上传头像了鸭，但是我们看看大部分个人网站的评论框长什么样： 如图所示，评论框里面的就只有评论文本框、邮箱、昵称和网址，网站上面也找不到……]]></description>
+				<content:encoded><![CDATA[<p>有些时候，我们在一些同学的个人网站下面发表评论，也许会注意到一些问题。</p>
+<figure class="wp-block-image"><img layer-src="https://censu.oss-cn-hongkong.aliyuncs.com/2019/05/image.png" src="https://censu.oss-cn-hongkong.aliyuncs.com/2019/05/image.png" alt="《如何做到输入邮箱就能在其他人的网站评论区显示头像》" /><figcaption></figcaption></figure>
+<p>大家可能会注意到一些问题，那就是为什么评论区里面，有些人有头像，有些人没有头像呢？</p>
+<p>可能有些同学会说了，别人当然是已经提前注册好账号并上传头像了鸭，但是我们看看大部分个人网站的评论框长什么样：</p>
+<figure class="wp-block-image"><img layer-src="https://censu.oss-cn-hongkong.aliyuncs.com/2019/05/image-1.png?x-oss-process=image/quality,q_50/resize,m_fill,w_576,h_1024" src="https://censu.oss-cn-hongkong.aliyuncs.com/2019/05/image-1.png?x-oss-process=image/quality,q_50/resize,m_fill,w_576,h_1024" alt="《如何做到输入邮箱就能在其他人的网站评论区显示头像》" /></figure>
+<p>如图所示，评论框里面的就只有评论<strong>文本框、邮箱、昵称</strong>和网址，网站上面也找不到半点可以上传头像的入口。</p>
+<p>其实呢，很多个人网站都是采用wordpress、typecho等开源博客程序制作的，他们都内置了一个第三方的头像服务： <a href="https://cn.gravatar.com/" target="_blank"  rel="nofollow" >Gravatar</a> </p>
+<div class="wp-block-image">
+<figure class="aligncenter"><img layer-src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1556876283290&amp;di=64819e3aba86bae03bd180dd4eb0d0d9&amp;imgtype=0&amp;src=http%3A%2F%2Fwww.wonderoftech.com%2Fwp-content%2Fuploads%2F2013%2F03%2FGravatar-Logo.jpg" src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1556876283290&amp;di=64819e3aba86bae03bd180dd4eb0d0d9&amp;imgtype=0&amp;src=http%3A%2F%2Fwww.wonderoftech.com%2Fwp-content%2Fuploads%2F2013%2F03%2FGravatar-Logo.jpg" alt="《如何做到输入邮箱就能在其他人的网站评论区显示头像》" /></figure>
+</div>
+<p>Gravatar中文全称为全球通用头像，旨在让用户能够轻轻松松的在不同网站上无需上传就能显示头像，那么话不多说，让我们开始吧。</p>
+<p>1.访问Gravatar中文网站<a href="http://cn.gravatar.com/" target="_blank"  rel="nofollow" >cn.gravatar.com</a>，亦或是百度直接搜索Gravatar，进入网站，点击网页右上角sign in，进入wp社群登录。</p>
+<figure class="wp-block-image"><img layer-src="https://censu.oss-cn-hongkong.aliyuncs.com/2019/05/image-2.png" src="https://censu.oss-cn-hongkong.aliyuncs.com/2019/05/image-2.png" alt="《如何做到输入邮箱就能在其他人的网站评论区显示头像》" /></figure>
+<p>2.在登录页面中，如果您之前注册过wordpress com社群， 您可以直接登录，你未注册，直接点击下方注册选项（Creat a new account）。</p>
+<div class="wp-block-image">
+<figure class="aligncenter"><img layer-src="https://censu.oss-cn-hongkong.aliyuncs.com/2019/05/image-3.png" src="https://censu.oss-cn-hongkong.aliyuncs.com/2019/05/image-3.png" alt="《如何做到输入邮箱就能在其他人的网站评论区显示头像》" /></figure>
+</div>
+<p style="text-align:center">3.如果你选择注册，请填写你想注册的邮箱、用户名和密码，其中邮箱建议你使用你的私人邮箱而非公开邮箱，这能有效防止你在其他网站被人冒名顶替。</p>
+<div class="wp-block-image">
+<figure class="aligncenter"><img layer-src="https://censu.oss-cn-hongkong.aliyuncs.com/2019/05/image-4.png" src="https://censu.oss-cn-hongkong.aliyuncs.com/2019/05/image-4.png" alt="《如何做到输入邮箱就能在其他人的网站评论区显示头像》" /></figure>
+</div>
+<p>4.创建完成之后你就可以返回了，wp社群接下来的一部是推销他们的博客域，返回刚刚的登录页面，输入账号密码后即可登录wp社群。</p>
+<div class="wp-block-image">
+<figure class="aligncenter"><img layer-src="https://censu.oss-cn-hongkong.aliyuncs.com/2019/05/image-5.png" src="https://censu.oss-cn-hongkong.aliyuncs.com/2019/05/image-5.png" alt="《如何做到输入邮箱就能在其他人的网站评论区显示头像》" /></figure>
+</div>
+<p>5.再次访问Gravatar，通过右上角Sign in完成账号授权，如果出来的界面是英文就请点击<strong>Approve</strong>哦，此时会跳转到一个页面，提示您注意查收验证邮件。不过需要注意的是，如果您在其他设备上进行验证，点击邮件中的按钮后会提示您登录，这个时候就用你刚刚注册的号登录就可以了。</p>
+<figure class="wp-block-image"><img layer-src="https://censu.oss-cn-hongkong.aliyuncs.com/2019/05/image-6.png" src="https://censu.oss-cn-hongkong.aliyuncs.com/2019/05/image-6.png" alt="《如何做到输入邮箱就能在其他人的网站评论区显示头像》" /></figure>
+<p>6.在邮件中点击确认后，我们来看到Gravatar，点击导航栏中的My Gravatar即可跳转到页面，在这个页面中，你可以添加一个新的邮箱（add a new email）在这个账户里面，如果要上传头像的话，就点击下面的那行添加新图片（add a new image）的蓝字即可。</p>
+<figure class="wp-block-image"><img layer-src="https://censu.oss-cn-hongkong.aliyuncs.com/2019/05/image-7.png" src="https://censu.oss-cn-hongkong.aliyuncs.com/2019/05/image-7.png" alt="《如何做到输入邮箱就能在其他人的网站评论区显示头像》" /></figure>
+<p>7.在头像上传页面，你既可以在这里上传一个（<strong>Upload new</strong>），也可以从一个url图片直链（<strong>from url</strong>）添加，还可以从之前在Gravatar上传的图片中选取一个（<strong>past Uploads</strong>），更可以用你的摄像头现场拍一个（<strong>from webcam</strong>），不过我们还是在这里直接点击上传一个。</p>
+<figure class="wp-block-image"><img layer-src="https://censu.oss-cn-hongkong.aliyuncs.com/2019/05/image-9.png" src="https://censu.oss-cn-hongkong.aliyuncs.com/2019/05/image-9.png" alt="《如何做到输入邮箱就能在其他人的网站评论区显示头像》" /></figure>
+<p>8.点击白色按钮选择图片进行上传，点击Next进入图片调整页面，调整好之后点击Crop image，这时候就要求你选择Gravatar的评级了，因为你上传的照片可能在全年龄段可以浏览的网站是不予显示的，具体如何这里我上一张已经翻译过的图，就不再多多赘述，点击设定评级（set rating）就大功告成啦。</p>
+<figure class="wp-block-image"><img layer-src="https://censu.oss-cn-hongkong.aliyuncs.com/2019/05/image-11.png" src="https://censu.oss-cn-hongkong.aliyuncs.com/2019/05/image-11.png" alt="《如何做到输入邮箱就能在其他人的网站评论区显示头像》" /></figure>
+<p>这个时候你在其他网站中评论，只需要在邮箱信息文本框中输入正确的邮箱就可以在评论区显示头像啦（咱也是有脸的人啦~）</p>
+<p>建议使用Chrome浏览器进行操作，不仅兼容性强，还可以实时翻译。</p>
+<p><strong>感谢各位阅读本文，规范转载时请注明原作者江程训和原文链接在文章开头哦，敬请四连操作哦：点赞、关注、投币和收藏，请期待江程训的下一篇文章~</strong></p>
+]]></content:encoded>
+			<wfw:commentRss>https://censujiang.com/411/feed</wfw:commentRss>
+		<slash:comments>7</slash:comments>
+		</item>
+		<item>
+		<title>百度：如日中天？却已是穷途末路</title>
+		<link>https://censujiang.com/332</link>
+		<comments>https://censujiang.com/332#respond</comments>
+		<pubDate>Sat, 13 Apr 2019 08:55:01 +0000</pubDate>
+		<dc:creator><![CDATA[江程训]]></dc:creator>
+				<category><![CDATA[市场分析]]></category>
+		<category><![CDATA[热点观察]]></category>
+		<category><![CDATA[商业分析]]></category>
+		<category><![CDATA[搜索]]></category>
+		<category><![CDATA[百度]]></category>
+		<category><![CDATA[穷途末路]]></category>
+
+		<guid isPermaLink="false">https://censujiang.com/?p=332</guid>
+		<description><![CDATA[引子 头腾大战（字节跳动与腾讯）正打得热火朝天呢，字节跳动跟百度又打起来了。 记得上回头百大战是因谣传百度内部在搞“打头办”而起，“打头办”顾名思义就是打击今日头条的组织，百度当时旗下也有了百家号这个产品，可以说是两家公司的祸根早就已经埋下。 最近一个月，又传出一件事（准确来讲这也是事实），字节跳动旗下现象级产品今日头条升级了其搜索功能，……]]></description>
+				<content:encoded><![CDATA[<div class="wp-block-cover has-background-dim" style="background-image:url(https://censu.oss-cn-hongkong.aliyuncs.com/2019/04/131626350925725070.jpg)">
+<p class="wp-block-cover-text">百度：如日中天？却已是穷途末路</p>
+</div>
+<h2>引子</h2>
+<p>头腾大战（字节跳动与腾讯）正打得热火朝天呢，字节跳动跟百度又打起来了。</p>
+<p>记得上回头百大战是因谣传百度内部在搞“打头办”而起，“打头办”顾名思义就是打击今日头条的组织，百度当时旗下也有了百家号这个产品，可以说是两家公司的祸根早就已经埋下。</p>
+<p>最近一个月，又传出一件事（准确来讲这也是事实），字节跳动旗下现象级产品今日头条升级了其搜索功能，使其更<del>像百度</del>为完善，业内人士也在猜测这是不是头百大战全面开打的标志（毕竟双方现在已经深入对方的核心业务）</p>
+<figure class="wp-block-image"><img layer-src="https://censu.oss-cn-hongkong.aliyuncs.com/2019/04/F9039DD92D6188B92AADCA00605DE4F9.png?x-oss-process=image/quality,q_50/resize,m_fill,w_576,h_1024" src="https://censu.oss-cn-hongkong.aliyuncs.com/2019/04/F9039DD92D6188B92AADCA00605DE4F9.png?x-oss-process=image/quality,q_50/resize,m_fill,w_576,h_1024" alt="《百度：如日中天？却已是穷途末路》" /></figure>
+<p>但我今天不行讨论这件事，这种事打一架就可以见分晓，况且也会有更专业的自媒体作者报道这事（其实我是懒），我想谈论的是百度本身。</p>
+<p>百度作为中国互联网三巨头BAT之一，虽然是首字母B，但是营收能力与体量远比不上阿里巴巴和腾讯，但何以见得百度落后于AT的原因？</p>
+<h2>百度为什么能成为巨头</h2>
+<p>俗话说得好，成也萧何，败也萧何，其根本原因就是他的搜索业务。</p>
+<p>几个月前，我看了一本书，书名我不大记得，但是其中的一句话我记得清清楚楚：<strong>专注，成就百度人生。</strong></p>
+<p>这本书出版于2016年，当时的百度还没有“落魄”到现在这种地步，作者在查阅百度及其创始人李彦宏的经历是，就提出了上述观点，作者认为，百度之所以能成为中文互联网巨头，因为其过于专注搜索业务。</p>
+<figure class="wp-block-image"><img layer-src="https://ws3.sinaimg.cn/large/9150e4e5gy1fxngnv3opzj20ga0e474m.jpg" src="https://ws3.sinaimg.cn/large/9150e4e5gy1fxngnv3opzj20ga0e474m.jpg" alt="《百度：如日中天？却已是穷途末路》" /><figcaption>还有这种说法？？？</figcaption></figure>
+<p>其实嘛，当时我看到这句话还楞了一下，不过也确实有点道理。</p>
+<p>百度的中文搜索是世界一流水平，Google退出中国很大程度上也是因为在普通网民的中文搜索体验上干不过百度，以及另外的一些所有外企都会为之困扰的价值观问题。</p>
+<p>Google于2018年似乎在内部解决了在中国开展业务所带来的价值观冲突问题，提出了“蜻蜓计划”，想要回归中国市场。</p>
+<figure class="wp-block-image"><img layer-src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3989859324,514746471&amp;fm=15&amp;gp=0.jpg" src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3989859324,514746471&amp;fm=15&amp;gp=0.jpg" alt="《百度：如日中天？却已是穷途末路》" /><figcaption>找不到蜻蜓计划的原图了，就先放在这里吧</figcaption></figure>
+<p>但是很不巧的是今年年初这个计划流产了，某些媒体人说这是他们内部又因为价值观的问题闹矛盾。</p>
+<p>我在这里额外BB一句，这可能是Google预计自己在中国市场赚不到钱所致，虽说价值观在一个企业内部是客观存在的，但资本都是逐利的，大部分企业把这玩意辅助业务的开展，没事就标榜自己有想法，有事就标榜自己正义，说白了就是既打幌子又标榜自己政治正确。</p>
+<p>先别喷我，我详细说明一下，互联网这块搜索业务的特殊情况。</p>
+<p>还是拿百度和Google举例吧，这两家公司在搜索方面，数据量都是非常大的，可用的数据是相当的，他们在不同领域都有各自优化的侧重点。</p>
+<figure class="wp-block-image"><img layer-src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1555149445642&amp;di=21cdc804519c12595ecc98458b0bb51f&amp;imgtype=0&amp;src=http%3A%2F%2Fwx3.sinaimg.cn%2Flarge%2F006whFC0ly1fubit9vgtaj30m80ci12k.jpg" src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1555149445642&amp;di=21cdc804519c12595ecc98458b0bb51f&amp;imgtype=0&amp;src=http%3A%2F%2Fwx3.sinaimg.cn%2Flarge%2F006whFC0ly1fubit9vgtaj30m80ci12k.jpg" alt="《百度：如日中天？却已是穷途末路》" /></figure>
+<p>比如Google是着重于优化以英语为首的西方拉丁语言的与体验，而百度则侧重于优化中文搜索的用户体验。英语和中文在词汇、语法、句型和简化用语等方面各不相同，假若没有长期的数据积累以及投入大量资金进行分析是不可能让百度和Google在各自的领域用户体验这么棒。</p>
+<p>另一方面，国内某些尝试看到百度成为“众矢之的”（详情请参见你随便搜一下就会出现的竞价广告和魏则西事件），又觉得自己能力满满很有信心，于是自己也想整一个。</p>
+<figure class="wp-block-image"><img layer-src="https://ws4.sinaimg.cn/large/9150e4e5gy1fynxhypaj9j206o06odid.jpg" src="https://ws4.sinaimg.cn/large/9150e4e5gy1fynxhypaj9j206o06odid.jpg" alt="《百度：如日中天？却已是穷途末路》" /></figure>
+<p>For Exmaple：360搜索，这货前前后后改了好几个名字，现在叫<del>综合搜索 360搜索+ 好搜</del> 360搜索，在最开始的时候指责百度，忽悠一众网民过去用他家的搜索引擎，结果市场份额直升30%。</p>
+<p>我当时也被忽悠过去了，但是我用了一年的360搜索又屁颠屁颠地跑回去用百度了，为什么？因为他的搜索体验相比而言实在太差了，比如去搜索一些自己也不知道怎么描述的东西时，360搜索往往会答非所问，但是百度则有很大几率给你相关的页面列表。</p>
+<figure class="wp-block-image"><img layer-src="https://censu.oss-cn-hongkong.aliyuncs.com/2019/04/image.png?x-oss-process=image/quality,q_50/resize,m_fill,w_1024,h_558" src="https://censu.oss-cn-hongkong.aliyuncs.com/2019/04/image.png?x-oss-process=image/quality,q_50/resize,m_fill,w_1024,h_558" alt="《百度：如日中天？却已是穷途末路》" /><figcaption></figcaption></figure>
+<p>然而最终360搜索也活成了自己曾经最讨厌的模样：</p>
+<figure class="wp-block-image"><img layer-src="https://censu.oss-cn-hongkong.aliyuncs.com/2019/04/image-1.png?x-oss-process=image/quality,q_50/resize,m_fill,w_1024,h_870" src="https://censu.oss-cn-hongkong.aliyuncs.com/2019/04/image-1.png?x-oss-process=image/quality,q_50/resize,m_fill,w_1024,h_870" alt="《百度：如日中天？却已是穷途末路》" /></figure>
+<h2>遭遇各种失败</h2>
+<p>百度也面临着互联网封闭化、孤岛化的危机，很多公司对于自家的内容都是画地为牢，不准抓取，比如今日头条、抖音、最右、知乎等，就连知乎和微信公众号也只是有限的将内容开放给搜狗搜索抓取。</p>
+<p>焦虑的他们也将百度APP的标语换成了“有事搜一搜，没事看一看”。</p>
+<p>网民的热点信息从百度，换成了微博、知乎、今日头条等地，而移动互联网带来的传统论坛的没落也沉重打击了百度搜索，但是人们还是继续养成了“有事搜一搜”的用户习惯，百度面临的是流量降低的窘境，现在他只是想回到以前的流量霸主的地位。</p>
+<p>那么百度为什么没有退路了呢？</p>
+<p>百度实在是太认真了，太过于专注搜索相关的领域，自打2010年起，百度对于外界的反应就是懵逼的，腾讯和小米在移动IM上打架（微信&amp;米聊）时，她就毫无知觉，一堆公司在那里打来打去，他也不动声色，等到2013年的时候微信崛起时百度才反应过来：哦，原来移动互联网时代已经彻底到来了。</p>
+<p>百度之前也布局过移动互联网的产品，但是不是像那些公司一样拼了老命。百度MP3陷入版权风波（后来收购了千千静听），百度贴吧处于新兴移动社区的水深火热之中，百度Hi在IM市场几乎狗带，百度开放云（后改名百度云）错失了第一波和第二波发展机会，百度手机助手主要流量来自搜索&#8230;&#8230;</p>
+<figure class="wp-block-image"><img layer-src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1555155788221&amp;di=6d0d1ba1c1c6c0aaa6de18a4ae9d5900&amp;imgtype=0&amp;src=http%3A%2F%2Fd.ifengimg.com%2Fw600%2Fe0.ifengimg.com%2F03%2F2018%2F1121%2F76B10B479FAC99FD1F4221267873205299E6BE9A_size249_w1080_h599.jpeg" src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1555155788221&amp;di=6d0d1ba1c1c6c0aaa6de18a4ae9d5900&amp;imgtype=0&amp;src=http%3A%2F%2Fd.ifengimg.com%2Fw600%2Fe0.ifengimg.com%2F03%2F2018%2F1121%2F76B10B479FAC99FD1F4221267873205299E6BE9A_size249_w1080_h599.jpeg" alt="《百度：如日中天？却已是穷途末路》" /></figure>
+<p>虽说百度2014年成绩很辉煌，有13款手机app使用人群过亿： 应用分发（91助手、百度手机助手、安卓市场）、移动互联网入口（搜索和浏览器）、工具类（手机输入法、安卓优化大师）、服务类 （百度视频、百度魔图）</p>
+<p>但是你看看现在你的手机还安装了这些吗？</p>
+<p>百度的应用推广起来很快，这个我承认，因为百度核心业务（搜索）的缘故，轻轻松松用户上亿，但是想要拥有持久的用户粘性，对于百度来讲真的很难。</p>
+<p>如果说其他公司的产品是考虑用户+公司的利益，那么百度估计只考虑到了公司的利益，一个劲地往用户嘴里喂屎，百度最近几年风评被害，发生魏则西事件，黑百度成为政治正确也不足为奇了。</p>
+<h2>能否成功自救？</h2>
+<p>百度在2016年全面布局云计算，人工智能和大数据，不久之后宣布成功转型为人工智能公司，说着高兴，其实苦累都落在肚子里，谁都知道搞大数据需要“杂质”较少的数据，百度搜索这个数据矿，着实太杂乱了一些，不如自媒体平台好挖：为什么？因为别人发布数据的时候已经分门别类打好TAG了。</p>
+<p>百度面对流量和技术发展需要的双重压力，相机上线百家号和熊掌号，后来熊掌号不知道为什么项目组没人来（据小道消息称是内斗），而百家号也陷入了版权和舆论风波，用户体验也不尽人意。</p>
+<p>终于，百度在2019年春节开启了大杀招：跟CCTV春晚联动。这招腾讯和阿里也用过，但是百度这个搞得活动需要连续跳转到上榜百度系app，要不是苹果手机还真有可能扛不住手机后台的内存压力，但是百度等到春晚那天本以为扛过了十几个双十一的服务器压力很happy的时候，结果没想到蹲在电视前的全是羊毛党，那其他人呢？估计是开着春晚玩手机去了，最后这帮羊毛党还吐槽百度在春晚后这么快就下线了活动页提不出钱来&#8230;&#8230;.</p>
+<figure class="wp-block-image"><img layer-src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1555155760161&amp;di=a8423e91f91d1dab23b0a7d6c4389ff3&amp;imgtype=0&amp;src=http%3A%2F%2Fwww.itbear.com.cn%2Fupload%2F2019-02%2F190206105424011.jpg" src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1555155760161&amp;di=a8423e91f91d1dab23b0a7d6c4389ff3&amp;imgtype=0&amp;src=http%3A%2F%2Fwww.itbear.com.cn%2Fupload%2F2019-02%2F190206105424011.jpg" alt="《百度：如日中天？却已是穷途末路》" /></figure>
+<p>那么我可爱的读者们，那么相信百度在这场活动中忽略了什么？优化用户体验啊！期间百度只更新了活动页和搞定了抗压服务器，甚至百度的iOSapp截止本文发稿（2019.4.13）时还没更新。</p>
+<h2>百度已经没有退路了</h2>
+<p>百度搜索很内行，除了搜索就外行了，一天到晚尽出昏招，甚至有些时候昏招都出到搜索上了，机会这么多，很少能抓得住。</p>
+<p>百度，看起来如日中天，是个行业巨头，但是他却是BAT中危机最重的，除了搜索，以及看起来可行的Ai，看起来已经没有别的路可以走了，业务扩展频频失败，现在蛋糕都被瓜分完毕，互联网资本寒冬又来临，但是百度现目前是不会倒闭的。</p>
+<p>还是那句话，成也萧何败也萧何，百度过度专注搜索而错失了其他机会，但这也是他的救命稻草，除非是下一场人机交互革命或者这个世界是某个系统流小说，百度不可能被任何一家公司打倒。</p>
+<figure class="wp-block-image"><img layer-src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1555155720951&amp;di=c4a692be2bc22979f43c22ec4225d6b5&amp;imgtype=0&amp;src=http%3A%2F%2Fp.sootoo.com%2Fson_media%2Fmsg%2F2016%2F04%2F14%2F727142.jpg" src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1555155720951&amp;di=c4a692be2bc22979f43c22ec4225d6b5&amp;imgtype=0&amp;src=http%3A%2F%2Fp.sootoo.com%2Fson_media%2Fmsg%2F2016%2F04%2F14%2F727142.jpg" alt="《百度：如日中天？却已是穷途末路》" /></figure>
+<p>百度想要走出这困境，只能靠自己，破釜沉舟。</p>
+<p class="has-text-color has-vivid-red-color"><strong>感谢您阅读完本文章，记得点赞、关注、投币和收藏哦，转载请在文章开头注明作者江程训及原文链接，期待下一篇文章(☆▽☆)</strong></p>
+]]></content:encoded>
+			<wfw:commentRss>https://censujiang.com/332/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>拾陆岁，祝江程训生日快乐</title>
+		<link>https://censujiang.com/287</link>
+		<comments>https://censujiang.com/287#comments</comments>
+		<pubDate>Tue, 19 Feb 2019 16:18:24 +0000</pubDate>
+		<dc:creator><![CDATA[江程训]]></dc:creator>
+				<category><![CDATA[诗歌与散文]]></category>
+		<category><![CDATA[十六岁]]></category>
+		<category><![CDATA[江程训]]></category>
+		<category><![CDATA[生日快乐]]></category>
+
+		<guid isPermaLink="false">https://dfjcx.cn/?p=287</guid>
+		<description><![CDATA[今天，2019年2月20日，一位名为江程训的人类，迎来了自己的16岁生日 他来到这个世界上已经有十六个年头，此刻的江程训是一个对世界充满好奇的青年，他拥有着与其他人不同寻常的的经历。 10岁左右开始学习编程，同时加入一个存在于网上由一群大龄中二病和真中二病共存的联盟。 在这之后，江程训由和他的那群中二小伙伴们一起创立了逗帆。 如果说江程训……]]></description>
+				<content:encoded><![CDATA[<figure class="wp-block-image"><img layer-src="https://img0.dfjcx.cn/2019/02/16岁生日.png?x-oss-process=image/quality,q_50/resize,m_fill,w_683,h_1024" src="https://img0.dfjcx.cn/2019/02/16岁生日.png?x-oss-process=image/quality,q_50/resize,m_fill,w_683,h_1024" alt="《拾陆岁，祝江程训生日快乐》" /><figcaption>江程训16岁生日快乐</figcaption></figure>
+<p>今天，2019年2月20日，一位名为江程训的人类，迎来了自己的16岁生日</p>
+<p>他来到这个世界上已经有十六个年头，此刻的江程训是一个对世界充满好奇的青年，他拥有着与其他人不同寻常的的经历。</p>
+<p>10岁左右开始学习编程，同时加入一个存在于网上由一群大龄中二病和真中二病共存的联盟。</p>
+<p>在这之后，江程训由和他的那群中二小伙伴们一起创立了逗帆。</p>
+<p>如果说江程训在他这目前来看还算短暂的人生里获得了什么？那就是多思考一次的能力。</p>
+<p>性格跳脱的他，没有单纯地成为一个开发者，师傅的信任，让他成为了一位产品经理，这也深深地磨炼了江程训，虽然他知道怎么做事圆滑，但本质上他是一个有志青年，一直坚持自己的底线。</p>
+<p>江程训也在那联盟的短暂时间内明白了特定知识对一个人的重要性，并以此为自己的信条。</p>
+<p>成长路上，得到一些东西，也会失去一些东西。</p>
+<p>初中学校编程社在期中的社员合照中没有江程训；</p>
+<p>江程训也没有参加信息奥赛；</p>
+<p>江程训没有成为一个真正的黑客；</p>
+<p>江程训没有成为一个令人敬仰的独立开发者。</p>
+<p>但是，一些种子已经种下，静待生根发芽，就如同现在的产品老司机称号。</p>
+<p>或许在将来，他也会被称为秃顶程序员、企业管理大牛、设计鬼才&#8230;..</p>
+<p>人的精力是有限的，但为了提升自己确确实实没有错误。</p>
+<p>江程训现在很反感那些所谓的佛系青年，因为人可以一时咸鱼，不可一世佛系，那么这样的人生还有什么意义？</p>
+<p>未来是不可预测的，不管江程训会变成他或她，但观察者可以让其变成坍缩态。假若不去观察那量子态，又怎么能实现自己的理想，人在这世间绝对不能匆匆忙忙地走过。</p>
+<p>即使失败了，那世人至少知晓，我曾经干过这些事，我达到了你们一生无法企及的高度。</p>
+<p>江程训，在这里祝自己十六岁生日快乐，即使未来有什么艰难险阻也要面带笑容鸭~</p>
+]]></content:encoded>
+			<wfw:commentRss>https://censujiang.com/287/feed</wfw:commentRss>
+		<slash:comments>11</slash:comments>
+		</item>
+		<item>
+		<title>没成年怎么开通公众号？这是一部学生党专属公众号秘籍</title>
+		<link>https://censujiang.com/282</link>
+		<comments>https://censujiang.com/282#comments</comments>
+		<pubDate>Mon, 18 Feb 2019 15:00:05 +0000</pubDate>
+		<dc:creator><![CDATA[江程训]]></dc:creator>
+				<category><![CDATA[产品与运营]]></category>
+		<category><![CDATA[二次元]]></category>
+		<category><![CDATA[未成年人]]></category>
+		<category><![CDATA[营销号]]></category>
+		<category><![CDATA[逗帆]]></category>
+
+		<guid isPermaLink="false">https://dfjcx.cn/?p=282</guid>
+		<description><![CDATA[（请确保您的网络能够连接Youtube） 想开通公众号？发现自己没成年诶&#8230;. 那可怎么办呢，好想自己的视频和文章被更多人看到Orz PS：江程训推荐的三大平台的创作中心直链 BiliBili：https://member.bilibili.com 大鱼号：https://dayu.com 逗帆：http://mp.dofan.……]]></description>
+				<content:encoded><![CDATA[<p><iframe src="https://www.youtube-nocookie.com/embed/AfEkSbtsrZA" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>（请确保您的网络能够连接Youtube）<br />
+想开通公众号？发现自己没成年诶&#8230;. 那可怎么办呢，好想自己的视频和文章被更多人看到Orz</p>
+<p>PS：江程训推荐的三大平台的创作中心直链</p>
+<p>BiliBili：https://member.bilibili.com</p>
+<p>大鱼号：https://dayu.com</p>
+<p>逗帆：http://mp.dofan.cn</p>
+]]></content:encoded>
+			<wfw:commentRss>https://censujiang.com/282/feed</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+		<item>
+		<title>更好用的WordPress二次元主题！Mokore更新1.2啦</title>
+		<link>https://censujiang.com/275</link>
+		<comments>https://censujiang.com/275#comments</comments>
+		<pubDate>Wed, 13 Feb 2019 13:46:55 +0000</pubDate>
+		<dc:creator><![CDATA[江程训]]></dc:creator>
+				<category><![CDATA[wordpress/前端]]></category>
+		<category><![CDATA[mokore]]></category>
+		<category><![CDATA[wordpress]]></category>
+		<category><![CDATA[产品]]></category>
+
+		<guid isPermaLink="false">https://dfjcx.cn/?p=275</guid>
+		<description><![CDATA[Duang~经过长达一年的更新&#8230;..好吧实际上从2018/12到2018/2也算是一年（手动狗头），Mokore主题又更新啦 Mokore是什么？ Mokore是由江程训根据Akina-Siren编写的一款Wordpress二次元简约个人博客主题，这是一个灰常好玩的主题，总之用它来搭建您自己的Wordpress站点是最不错的啦……]]></description>
+				<content:encoded><![CDATA[<p>Duang~经过长达一年的更新&#8230;..好吧实际上从2018/12到2018/2也算是一年（手动狗头），Mokore主题又更新啦</p>
+<h2>Mokore是什么？</h2>
+<p>Mokore是由江程训根据Akina-Siren编写的一款Wordpress二次元简约个人博客主题，这是一个灰常好玩的主题，总之用它来搭建您自己的Wordpress站点是最不错的啦。</p>
+<ul>
+<li>主题名称：Mokore</li>
+<li>主题作者：<a href="https://dfjcx.cn/" target="_blank" rel="noopener" rel="nofollow" >江程训（CensuJiang）</a></li>
+<li>当前版本：1.2（2019-2-14持续更新中）</li>
+<li>主题类型：WordPress，个人博客，博客主题，二次元，自媒体，大佬必备</li>
+<li>特色描述：简约而不简单，特别适合喜欢二次元的自媒体、程序员和画师</li>
+<li>兼容环境：<strong>PHP5.6.0 +</strong>，WordPress 4.8+</li>
+<li>官方演示：<a href="https://mokore.dfjcx.cn/" target="_blank"  rel="nofollow" >https://mokore.dfjcx.cn/</a></li>
+<li>主题QQ群：<a href="http://shang.qq.com/wpa/qunwpa?idkey=d99e5a83cbba65cd3054bd38b0c9b6bb8cc524b32d269ccb5d67e6d46723f569" target="_blank" rel="noopener noreferrer" rel="nofollow" ><i class="fab fa-qq"> 346363551</i></a></li>
+<li>GIthub下载：<a href="https://github.com/censujiang/Mokore" target="_blank" rel="noopener" rel="nofollow" >https://github.com/censujiang/Mokore</a></li>
+</ul>
+<p>（ps：更新版本的这一天正好是情人节，那么各位是否脱单了呢🤣）</p>
+<p><img layer-src="https://img0.dfjcx.cn/2019/02/20190213171302.png?x-oss-process=image/quality,q_50/resize,m_fill,w_1024,h_557" src="https://img0.dfjcx.cn/2019/02/20190213171302.png?x-oss-process=image/quality,q_50/resize,m_fill,w_1024,h_557" alt="《更好用的Wordpress二次元主题！Mokore更新1.2啦》" /><img layer-src="https://img0.dfjcx.cn/2019/02/搜狗截图20190213171302.png" src="https://img0.dfjcx.cn/2019/02/搜狗截图20190213171302.png" alt="《更好用的Wordpress二次元主题！Mokore更新1.2啦》" /></p>
+<h2>都更新了些啥？</h2>
+<h3>1.PC端菜单样式更加好看</h3>
+<p><img layer-src="https://img0.dfjcx.cn/2019/02/搜狗截图20190213171812.png" src="https://img0.dfjcx.cn/2019/02/搜狗截图20190213171812.png" alt="《更好用的Wordpress二次元主题！Mokore更新1.2啦》" /></p>
+<p>原先的菜单样式不加任何修饰，如果说是深色背景那么体验起来就十分不爽，现在将菜单样式加了一层高斯模糊的类似按钮的样式，是不是好看多了呢😍</p>
+<h3>2.重新设计社交图标</h3>
+<p><img layer-src="https://img0.dfjcx.cn/2019/02/2b66589cbf57654c5cf745bbf69354db.png" src="https://img0.dfjcx.cn/2019/02/2b66589cbf57654c5cf745bbf69354db.png" alt="《更好用的Wordpress二次元主题！Mokore更新1.2啦》" /></p>
+<p>我重新设计了一下首页顶部灯箱的图标，因为之前的会给访客带来一种页面设计不干净的感觉，于是索性就弄成这样咯😅</p>
+<h3>3.完善后台登录选项</h3>
+<p><img layer-src="https://img0.dfjcx.cn/2019/02/d7dde7af967de94e4ca90fab28720044.png" src="https://img0.dfjcx.cn/2019/02/d7dde7af967de94e4ca90fab28720044.png" alt="《更好用的Wordpress二次元主题！Mokore更新1.2啦》" /></p>
+<p>现在，你可以强制指定一个页面为登录页面了，当然注册亦是如此，抛弃掉wp-login.php的浏览器直链访问吧🤞</p>
+<h3>4.文章滚动目录功能</h3>
+<p><img layer-src="https://img0.dfjcx.cn/2019/02/0748b6ec8cc046a01666ba99841165c9.png" src="https://img0.dfjcx.cn/2019/02/0748b6ec8cc046a01666ba99841165c9.png" alt="《更好用的Wordpress二次元主题！Mokore更新1.2啦》" /></p>
+<p>一个类似于逗帆网文章目录，现在你可以在Mokore使用</p>
+<p>使用方法：一篇文章内使用多个标题就可以啦，访客点击文章目录那个小框框里面的标题就可以跳转到文章的相应部分😉</p>
+<h3>5.站点运行时间</h3>
+<p><img layer-src="https://img0.dfjcx.cn/2019/02/4439e0c9a0893a81a7688d8d532064ac.png" src="https://img0.dfjcx.cn/2019/02/4439e0c9a0893a81a7688d8d532064ac.png" alt="《更好用的Wordpress二次元主题！Mokore更新1.2啦》" /></p>
+<p>就是这玩意，一个无聊的玩意，可以显示你建站到现在多少天，个人认为装逼用非常适合😎</p>
+<h3>6.修复了一堆你们可能从来没遇到过的BUG另外支持自定义主题CSS链接</h3>
+<h2>那么，这个主题还有啥好玩</h2>
+<p>首页社交组件，让您的Fans轻松联系到您~</p>
+<p>简洁阅读风格，看屏幕爽到爆炸</p>
+<p>随机二次元封面图，拯救选择困难症</p>
+<p>三图广告位，助力访客更加了解本站</p>
+<p>有趣的提示文字，浓浓的次元风格</p>
+<p>&#8230;&#8230;</p>
+<p>更多功能，等你体验哦~</p>
+<p><strong>主题演示站：<a href="https://mokore.dfjcx.cn" target="_blank"  rel="nofollow" >https://mokore.dfjcx.cn</a></strong></p>
+<p><strong>Github下载：<a href="https://github.com/censujiang/Mokore" target="_blank"  rel="nofollow" >https://github.com/censujiang/Mokore</a></strong></p>
+<p><strong>Mokore是一款Wordpress二次元简约个人博客主题，在进行二次开发时必须遵守Apache2.0协议。</strong></p>
+<p>&nbsp;</p>
+]]></content:encoded>
+			<wfw:commentRss>https://censujiang.com/275/feed</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>去你妈的木星！这是我们的流浪地球</title>
+		<link>https://censujiang.com/263</link>
+		<comments>https://censujiang.com/263#comments</comments>
+		<pubDate>Tue, 05 Feb 2019 13:56:47 +0000</pubDate>
+		<dc:creator><![CDATA[江程训]]></dc:creator>
+				<category><![CDATA[政治与历史]]></category>
+		<category><![CDATA[热点观察]]></category>
+		<category><![CDATA[流浪地球]]></category>
+		<category><![CDATA[热点事件]]></category>
+		<category><![CDATA[电影]]></category>
+		<category><![CDATA[科幻]]></category>
+
+		<guid isPermaLink="false">http://dfjcx.cn/?p=263</guid>
+		<description><![CDATA[“你们中国人很奇怪，为什么跑路都要带着地球？”外国人永远不会懂，家和土地，对中国人的意义——网易云音乐《带着地球去流浪》热门评论。 人在最绝望的时候会做什么，逃避？亦或是勇于面对困难。 21世纪初，当人们沉迷于纸醉金迷时，天文学家告诉了所有人的一个令人绝望的消息：太阳将在100年内不断膨胀，最终将越过地球轨道，而在那时，地球会被烧干，人类……]]></description>
+				<content:encoded><![CDATA[<p><img layer-src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1549386183153&amp;di=84a36a3f4c9a89114df681365a21790c&amp;imgtype=0&amp;src=http%3A%2F%2Fpic1.win4000.com%2Fpic%2Fe%2Fbc%2Fd5ba101c3b.jpg" src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1549386183153&amp;di=84a36a3f4c9a89114df681365a21790c&amp;imgtype=0&amp;src=http%3A%2F%2Fpic1.win4000.com%2Fpic%2Fe%2Fbc%2Fd5ba101c3b.jpg" alt="《去你妈的木星！这是我们的流浪地球》" /></p>
+<blockquote>
+<p>“你们中国人很奇怪，为什么跑路都要带着地球？”外国人永远不会懂，家和土地，对中国人的意义——网易云音乐《带着地球去流浪》热门评论。</p>
+</blockquote>
+<p>人在最绝望的时候会做什么，逃避？亦或是勇于面对困难。</p>
+<p>21世纪初，当人们沉迷于纸醉金迷时，天文学家告诉了所有人的一个令人绝望的消息：太阳将在100年内不断膨胀，最终将越过地球轨道，而在那时，地球会被烧干，人类文明不复存在。</p>
+<p><img layer-src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1549964917&amp;di=63eee3215995638f03aed33e355bba67&amp;imgtype=jpg&amp;er=1&amp;src=http%3A%2F%2Fzhongxue.k618.cn%2Fkxsk%2Ftwg%2Ftwq%2F201210%2FW020121031617342073225.jpg" src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1549964917&amp;di=63eee3215995638f03aed33e355bba67&amp;imgtype=jpg&amp;er=1&amp;src=http%3A%2F%2Fzhongxue.k618.cn%2Fkxsk%2Ftwg%2Ftwq%2F201210%2FW020121031617342073225.jpg" alt="《去你妈的木星！这是我们的流浪地球》" /></p>
+<p>“那时候，有一种叫钱的东西，所有人为之疯狂&#8230;&#8230;.”韩子昂这样对自己的孙子孙女说道，可是他们哪里明白，几十年的时间已经把地球改造得面目全非，由于地球离太阳越来越远，地表的温度越来越低，所有的水都冻结成了冰。地球上布满了一万多座重聚变发动机，而联合政府为了人类文明的生存考虑各种因素，每一座重聚变发动机下面都建造了一座地下城。</p>
+<p>人类社会进入了生产配给制，所有人都为了那个4.2光年外的那三颗安全而又温暖的希望奋斗。</p>
+<p><img layer-src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1549370911508&amp;di=4a252492b6f311118fa2c5a447caa702&amp;imgtype=jpg&amp;src=http%3A%2F%2Fimg2.imgtn.bdimg.com%2Fit%2Fu%3D747087027%2C1046649693%26fm%3D214%26gp%3D0.jpg" src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1549370911508&amp;di=4a252492b6f311118fa2c5a447caa702&amp;imgtype=jpg&amp;src=http%3A%2F%2Fimg2.imgtn.bdimg.com%2Fit%2Fu%3D747087027%2C1046649693%26fm%3D214%26gp%3D0.jpg" alt="《去你妈的木星！这是我们的流浪地球》" /></p>
+<p>这是一部长达2500年，持续100代人的史诗。</p>
+<p>事情总是没有那么理想化，当地球为了利用木星的引力加速逃逸太阳系时，人类文明的最大“反派”木星，利用引力拉扯地球地壳，造成全球高达50%的重聚变行星发动机出现故障。</p>
+<p>重聚变发动机，流浪地球位面人类文明的的最大造物，凝聚了人类所有智慧结晶的庞然造物，在这冰冷的宇宙中，像个小孩子的玩具一样，不堪一击。</p>
+<p>“地球将于37小时4分12秒后撞击木星，这是一场注定无劳的救援。”</p>
+<p>“三十年来，发动机从来没熄过火，这不是一场简单的救援，我们摊上大事了”</p>
+<p>“不能再死人了，地球上三十五亿人，我老婆孩子全他妈白死了！”</p>
+<p>“为了我们的孩子，我们已经没有什么可以失去的了。”</p>
+<p>“你可想好了，这是我们唯一回家的机会。”</p>
+<p>“看来，我们只能靠自己了。”</p>
+<h1>中国科幻电影只有靠自己</h1>
+<p>流浪地球，这部电影相对于流水线化生产的好莱坞电影来说普普通通，但是对于刚刚Hello World的中国科幻电影纪元来说，这是里程碑式的。</p>
+<p>四年的筹备，两千多个特效镜头，三千多张概念设计图，八千多张分镜头画稿，一万多个道具……甚至连一个背景都融入了那么多中国的气息。</p>
+<p><img layer-src="https://img0.dfjcx.cn/2019/02/RZ0LGHSSKAU466UJX81RER.png?x-oss-process=image/quality,q_50/resize,m_fill,w_1024,h_402" src="https://img0.dfjcx.cn/2019/02/RZ0LGHSSKAU466UJX81RER.png?x-oss-process=image/quality,q_50/resize,m_fill,w_1024,h_402" alt="《去你妈的木星！这是我们的流浪地球》" /></p>
+<div class="para">影片中行星发动机的直径多达十几公里，难以想象的庞大全貌让人充满好奇，而为了呈现这一奇观，美术团队设计了十几版不同方案，从线稿到上色、动态预览，再到特效实现。</div>
+<p>在我写这篇文的时候，网上甚至有这样一张比较搞笑的图片，足以从侧面证明流浪地球拍摄过程中的艰辛。</p>
+<p><img layer-src="https://img0.dfjcx.cn/2019/02/Cache_-6d62cbd13026aa85..jpg?x-oss-process=image/quality,q_50/resize,m_fill,w_1024,h_795" src="https://img0.dfjcx.cn/2019/02/Cache_-6d62cbd13026aa85..jpg?x-oss-process=image/quality,q_50/resize,m_fill,w_1024,h_795" alt="《去你妈的木星！这是我们的流浪地球》" /></p>
+<p>不多说，这部电影对得起你为买电影票付的钱。</p>
+<h1>没有单打独斗的英雄</h1>
+<p>说实话，我从来不会因为一个虚拟的故事而哭泣，很久之前动画电影《你的名字》上映时，我去看了下，我只感觉到一种悲伤的情绪，但是我这回实实在在在影院落泪了。</p>
+<p>当地球要坠入木星的时候，所有人绷紧了弦；</p>
+<p>当整个杭州城因为行星发动机而陷入岩浆之中，救援队长无奈而又懊悔的吐槽；</p>
+<p>当CN171-11救援队这几个人的力量无法促使行星发动机进入单通道大功率模式的时候，小队所有人心里在想自己太弱小了；</p>
+<p>当一位日本人知晓地球无望对着木星开枪自杀时，因为地球他这赖以生存的家无法被挽回；</p>
+<p>当刘培强牺牲自我引爆气体带产生推力加速地球逃逸木星时，刘启望着天上在玻璃头盔里流下了眼泪；</p>
+<p>但是，绝望绝不会是永恒的：</p>
+<p>所有人类都在努力检修发动机，在近150万人的抢救下，100%的赤道转向发动机和73%的推进发动机被修复；</p>
+<p>当赤道附近，无论是以色列的科学家，韩国驾驶员，还是看着队员自杀依然转向的日本救援队等等这些人，这些人类的一分子都来助力启动发动机，使得人类文明得以延续；</p>
+<p>当处在绝望的环境中，假如还有人能够以微笑面对这个世界，那么这个人必将走向他的辉煌，文明亦是如此。</p>
+<div>
+<div>
+<p>太阳熄灭带来的的绝望，流浪地球计划带来的的希望，坠入木星带来的的绝望，最终汇聚成成功逃脱的希望。</p>
+</div>
+</div>
+<p>从来没有什么个人英雄主义，人类的命运需要每一个人来共同谱写，无论这之中牺牲了多少人，但为了那个即便渺茫的机会，这都是值得的。</p>
+<p><img layer-src="https://img0.dfjcx.cn/2019/02/HRO1KMJ5KE1V0I42CH.png?x-oss-process=image/quality,q_50/resize,m_fill,w_1024,h_402" src="https://img0.dfjcx.cn/2019/02/HRO1KMJ5KE1V0I42CH.png?x-oss-process=image/quality,q_50/resize,m_fill,w_1024,h_402" alt="《去你妈的木星！这是我们的流浪地球》" /></p>
+<h1>大历史背后也有小细节</h1>
+<p>电影最开头， 刘启、刘培强和韩子昂祖孙三代在地球起航前露营在海滩上，观赏这最后的海景，小刘启童真地用望远镜观察看似毫无威胁的木星。</p>
+<p>当时所有小孩子都没有明白流浪地球计划意味着什么。</p>
+<p>可母亲病重而亡，父亲在希望号空间站更是二十年没有联系过刘启，这让刘启开始在心中怨恨父亲。</p>
+<p>甚至在刘培强与地球通话时，在旁边的刘启还大吼大叫：“跟他有什么好说的！”</p>
+<p>但是在最后木星被点燃的时刻，看着父亲点真的已经变成了天上的星星的刘启，心里面或许已经认同这个父亲了吧。</p>
+<p><img layer-src="https://img0.dfjcx.cn/2019/02/搜狗截图20190205202034.png?x-oss-process=image/quality,q_50/resize,m_fill,w_1024,h_658" src="https://img0.dfjcx.cn/2019/02/搜狗截图20190205202034.png?x-oss-process=image/quality,q_50/resize,m_fill,w_1024,h_658" alt="《去你妈的木星！这是我们的流浪地球》" /></p>
+<p>“你会变成一颗星星吗？”</p>
+<p>“会啊，你只需要数三，二，一，抬头，就看到爸爸了。”</p>
+<h1>地球，我的流浪地球&#8230;</h1>
+<p>地球，带着艰难险阻上路了。</p>
+<p>重聚变发动机将会消耗地球的一层地壳，人类失去了地表熟悉的山川景色。</p>
+<p>将近100代人将会待在地下城度过他们的余生，他们的后代永远不知道天空是什么样子，大地是什么样子，海洋是什么样子，甚至，温暖的太阳是什么样子。</p>
+<p><img layer-src="https://pic3.zhimg.com/80/v2-22daa8588162d14c97590382f2ef0300_hd.jpg" src="https://pic3.zhimg.com/80/v2-22daa8588162d14c97590382f2ef0300_hd.jpg" alt="《去你妈的木星！这是我们的流浪地球》" /></p>
+<p>地球在遭遇木星的灾难后，是否在柯博伊带会重演生离死别的悲剧？会不会遇上真正的三体人？</p>
+<p>空间站内，刘培强的俄罗斯航天员马卡洛夫对他说过等到贝加尔湖的冰化了，就让我们的子孙后代去那里钓鱼。</p>
+<p>有这样一句话至始至终贯穿着整部电影：</p>
+<blockquote>
+<p>北京市第三交通委员会提醒您： 道路千万条，安全第一条，行车不规范，亲人两行泪</p>
+</blockquote>
+<p>地球作为人类文明那辆最后的大巴车，差点变换轨道撞击木星，为了人类文明这三十五亿人的生死存亡，这些人死去了，最终留下的是亲人两行泪和2500年后人类英雄纪念堂存储在数据中冰冷的名字。</p>
+<p>那一万多台发动机点亮的，是人类想要活下去的对疯狂的太阳的抗诉，以及活下去的希望。</p>
+<p>所以，无论人类历史将导向何处，为了我们的家人，为了我们的国家，为了我们的文明，一定要选择希望！</p>
+<p><strong>本文作者江程训，欢迎各位规范转载，需要在醒目处注明文章作者江程训和原文章链接</strong></p>
+]]></content:encoded>
+			<wfw:commentRss>https://censujiang.com/263/feed</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>回答：为什么部分「二次元人」常被人讨厌？</title>
+		<link>https://censujiang.com/210</link>
+		<comments>https://censujiang.com/210#comments</comments>
+		<pubDate>Thu, 13 Dec 2018 03:06:31 +0000</pubDate>
+		<dc:creator><![CDATA[江程训]]></dc:creator>
+				<category><![CDATA[二次元]]></category>
+		<category><![CDATA[市场分析]]></category>
+		<category><![CDATA[江程训]]></category>
+
+		<guid isPermaLink="false">https://dfjcx.cn/?p=210</guid>
+		<description><![CDATA[二次元本身就是一种文化，但现在不是小众文化了，而是逐渐成为包罗万象的大众文化。 不知道大家听说过一句话没有：林子大了什么鸟都有。 大抵就是说的这个，那么为什么部分二次元人会常常被讨厌呢？ 作为一个动漫网站的站长，我很关注国内二次元文化的发展，也其中发现了一些问题倾向，可能就是导致部分二次元人常被讨厌的根本原因： 低龄化 从2015年开始，……]]></description>
+				<content:encoded><![CDATA[<div>
+<div>
+<p>二次元本身就是一种文化，但现在不是小众文化了，而是逐渐成为包罗万象的大众文化。</p>
+<p>不知道大家听说过一句话没有：林子大了什么鸟都有。</p>
+<p>大抵就是说的这个，那么为什么部分二次元人会常常被讨厌呢？</p>
+<p>作为一个动漫网站的站长，我很关注国内二次元文化的发展，也其中发现了一些问题倾向，可能就是导致部分二次元人常被讨厌的根本原因：</p>
+<ul>
+<li><b>低龄化</b></li>
+</ul>
+<p>从2015年开始，就不断有16岁以下的人员入了这个坑，就拿B站来说，这些人对整个二次元的社区氛围造成了不可逆的影响，他们被称为批小将。</p>
+<p>未成年人本身心智不成熟，很容易受到外部影响（例如自称前辈的人瞎带），做出中二而狂热的行为（当然也不是日本番剧中那些正能量的行为，大部分是整天维护自己所谓的二次元）。</p>
+<p>对此，我只想说：<b>还是作业少了。</b></p>
+<ul>
+<li><b>认知偏移化</b></li>
+</ul>
+<p>二次元文化发展越来越迅速，自然而然也产生了很多分支文化，<b>但是！</b>基于上文所说的低龄化，我们不难发现自己身边出现了越来越多这样的行为：</p>
+<ol>
+<li>你不玩FGO/崩崩崩？你不是二次元！</li>
+<li>你不喜欢洛天依/初音？你不是二次元！</li>
+<li>你不看《狐妖小红娘》/《魔道祖师》？你不是二次元！</li>
+<li>你不会画二次元插画？你不是二次元！</li>
+<li>你没出过COS？你不是二次元！</li>
+</ol>
+<p>当然以上行为都算是。。。。好一点的了，我之前还看到过这么雷人的：</p>
+<p><b>你不喜欢穿Lolita？你不是二次元！</b></p>
+<p>真是可笑又牛逼，别人喜欢什么关你什么事？别总是以为自己的圈子就是真正的二次元圈，二次元这玩意自从大量资本注入（见下文）之后其概念就被各种企业带偏。</p>
+<p>对此，我只想引用A站的一句话：<b>天下漫友是一家。</b></p>
+<ul>
+<li><b>创业投资跟风化</b></li>
+</ul>
+<p>二次元文化自从兴起之后，很多人就看准了风口，瞎创业瞎宣传，顺便还带传统投资者的瞎投资。</p>
+<p>二次元本身就是一种基于人类对美好事物的向往而产生的一种文化，这不是什么随随便便投资创业就解决的问题，而是要求无论是创业者和投资者都要求对这个文化十分了解，否则就因为无法理解其内涵而失败。</p>
+<p>因为二次元本身的特性，在国内发展最初面向于高收入人群，这些人普遍拥有高的素质，所以在二次元文化发展初期是没有太大问题的，但是随着创业热潮，很多低素质人群被带入坑，给整个二次元生态带来了不可逆的影响。</p>
+<p>从2017年二次元创业热潮过去后，很多二次元企业都卷钱跑路了，而这些企业带来的后遗症是二次元低龄化和认知偏移化，而存活下来的企业，只能按照他们造就的新二次元生态发展。</p>
+<p>我并不是不赞同二次元的商业化，的确，商业化是好事，这能给整个二次元生态带来大量资金，促进文化发展，但是商业化是一把双刃剑，很明显国内的二次元商业化把剑刺向了自己，进而导致了这些问题。</p>
+<p><b>二次元文化最初给我们带来的是满满的正能量，玩舰娘游戏，你能发现这些舰娘背后的真实历史；看热血番剧，你能给自己带来继续努力的动力，看着主角们成功之时，你也发现自己也成就了自己的一番事业；画二次元插画，你能对绘画产生浓重兴趣，进而学习绘画最终成为一个时代的画家。</b></p>
+<p><b>而这部分被讨厌的二次元人恰恰没有理解二次元的精髓，这不仅仅是他们的错，我们这些创业者和普通漫友都有责任。毕竟我们是二次元文化的载体，我们有权利也有义务发展好属于我们自己的文化。</b></p>
+<p><b>希望看到本文的各位，好好思考一下，二次元的本质是什么？它究竟能给自己带来什么？</b></p>
+</div>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>https://censujiang.com/210/feed</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+		<item>
+		<title>江程训的Mokore，一个WordPress二次元个人博客主题</title>
+		<link>https://censujiang.com/200</link>
+		<comments>https://censujiang.com/200#comments</comments>
+		<pubDate>Sat, 24 Nov 2018 11:41:14 +0000</pubDate>
+		<dc:creator><![CDATA[江程训]]></dc:creator>
+				<category><![CDATA[wordpress/前端]]></category>
+		<category><![CDATA[看点与见解]]></category>
+		<category><![CDATA[wordpress]]></category>
+		<category><![CDATA[主题]]></category>
+		<category><![CDATA[江程训]]></category>
+
+		<guid isPermaLink="false">https://dfjcx.cn/?p=200</guid>
+		<description><![CDATA[一个Wordpress二次元个人博客主题，简约而不简单，Made BY 江程训。 最近总感觉作为一个Wordpress老玩家（其实也不算多老，也就接触这个网站程序一年），自己似乎少了点什么，于是就做了这款主题。 本主题从2018年10月月初开始动工，这里有我的心血，希望大家喜欢，也希望大家能够在Github去Star这个主题。 主题信息 ……]]></description>
+				<content:encoded><![CDATA[<p><img layer-src="http://img0.dfjcx.cn/2018/11/timg.jpg" src="http://img0.dfjcx.cn/2018/11/timg.jpg" alt="《江程训的Mokore，一个Wordpress二次元个人博客主题》" /></p>
+<p><span style="vertical-align: inherit;">一个Wordpress二次元个人博客主题，简约而不简单，Made BY 江程训。</span></p>
+<p>最近总感觉作为一个Wordpress老玩家（其实也不算多老，也就接触这个网站程序一年），自己似乎少了点什么，于是就做了这款主题。</p>
+<p>本主题从2018年10月月初开始动工，这里有我的心血，希望大家喜欢，也希望大家能够在Github去Star这个主题。</p>
+<h1><span style="vertical-align: inherit;">主题信息</span></h1>
+<ul>
+<li><span style="vertical-align: inherit;">主题名称：Mokore</span></li>
+<li><span style="vertical-align: inherit;">主题作者：</span><a href="https://dfjcx.cn/" target="_blank" rel="noopener" rel="nofollow" ><span style="vertical-align: inherit;">江程训（CensuJiang）</span></a></li>
+<li><span style="vertical-align: inherit;">当前版本：1.0.0（2018-11-24）</span></li>
+<li><span style="vertical-align: inherit;">主题类型：WordPress的，个人博客，博客主题，二次元，自媒体，大佬必备</span></li>
+<li><span style="vertical-align: inherit;">特色描述：简约而不简单，特别适合喜欢二次元的自媒体、程序员和画师</span></li>
+<li><span style="vertical-align: inherit;">兼容环境：</span><strong><span style="vertical-align: inherit;">PHP5.6.0 +</span></strong><span style="vertical-align: inherit;">，WordPress 4.8+</span></li>
+<li><span style="vertical-align: inherit;">官方演示：<a href="https://mokore.dfjcx.cn/" target="_blank"  rel="nofollow" >https://mokore.dfjcx.cn/</a></span></li>
+<li><span style="vertical-align: inherit;">主题QQ群：</span><a href="http://shang.qq.com/wpa/qunwpa?idkey=d99e5a83cbba65cd3054bd38b0c9b6bb8cc524b32d269ccb5d67e6d46723f569" target="_blank" rel="noopener noreferrer" rel="nofollow" ><i class="fab fa-qq"><span style="vertical-align: inherit;"> 346363551</span></i></a></li>
+<li><span style="vertical-align: inherit;">主题状态：更新中</span></li>
+<li><span style="vertical-align: inherit;">GIthub下载：<a href="https://github.com/censujiang/Mokore" target="_blank"  rel="nofollow" >https</a>：</span><a href="https://github.com/censujiang/Mokore" target="_blank"  rel="nofollow" ><span style="vertical-align: inherit;">//github.com/censujiang/Mokore（欢迎star）</span></a></li>
+</ul>
+<h1><span style="vertical-align: inherit;">预览图</span></h1>
+<p><img layer-src="http://img0.dfjcx.cn/2018/11/屏幕截图196.png" src="http://img0.dfjcx.cn/2018/11/屏幕截图196.png" alt="《江程训的Mokore，一个Wordpress二次元个人博客主题》" /></p>
+<p><img layer-src="http://img0.dfjcx.cn/2018/11/屏幕截图197.png" src="http://img0.dfjcx.cn/2018/11/屏幕截图197.png" alt="《江程训的Mokore，一个Wordpress二次元个人博客主题》" /><img layer-src="http://img0.dfjcx.cn/2018/11/屏幕截图198.png" src="http://img0.dfjcx.cn/2018/11/屏幕截图198.png" alt="《江程训的Mokore，一个Wordpress二次元个人博客主题》" /><img layer-src="http://img0.dfjcx.cn/2018/11/屏幕截图199.png" src="http://img0.dfjcx.cn/2018/11/屏幕截图199.png" alt="《江程训的Mokore，一个Wordpress二次元个人博客主题》" /><img layer-src="http://img0.dfjcx.cn/2018/11/屏幕截图200.png" src="http://img0.dfjcx.cn/2018/11/屏幕截图200.png" alt="《江程训的Mokore，一个Wordpress二次元个人博客主题》" /></p>
+<h1>主题描述</h1>
+<p>如果您正在寻找一款既简单却不简约，既丰富却不复杂，不仅个性而且另类的WordPress 主题。如果这个页面荣幸地被您访问到，那么这款主题极有可能是您的“一生中最爱”。</p>
+<p>这款主题是我江程训人生中的第一个Wordpress作品，我会持续更新，本主题在编写过程中引用了一些代码或程序亦或是其他的东西，详情请见<a href="https://mokore.dfjcx.cn/copyright" target="_blank"  rel="nofollow" >Copyright界面</a>。</p>
+<h1>官方网站</h1>
+<p>演示地址：<a href="https://mokore.dfjcx.cn" target="_blank"  rel="nofollow" >https://mokore.dfjcx.cn</a></p>
+<p>主题简介：<a href="https://mokore.dfjcx.cn/about/" target="_blank"  rel="nofollow" >https://mokore.dfjcx.cn/about/</a></p>
+<p><strong>非常感谢您选择江程训的Mokore主题，我会持续更新，也希望您把此作品推荐给其他站长或者博主。</strong></p>
+]]></content:encoded>
+			<wfw:commentRss>https://censujiang.com/200/feed</wfw:commentRss>
+		<slash:comments>9</slash:comments>
+		</item>
+		<item>
+		<title>改两下代码就能让WordPress支持中文URL</title>
+		<link>https://censujiang.com/180</link>
+		<comments>https://censujiang.com/180#comments</comments>
+		<pubDate>Sat, 06 Oct 2018 10:18:19 +0000</pubDate>
+		<dc:creator><![CDATA[江程训]]></dc:creator>
+				<category><![CDATA[wordpress/前端]]></category>
+		<category><![CDATA[wordpress]]></category>
+		<category><![CDATA[中文url]]></category>
+		<category><![CDATA[江程训]]></category>
+
+		<guid isPermaLink="false">https://dfjcx.cn/?p=180</guid>
+		<description><![CDATA[之前在配置WordPress的时候做了个固定链接（%postname%），但在这之后我在我无意间点到文章的中文TAG的链接（例如http://yoursite.com/p/tag/这是中文的）直接给我弹了个404 Not Found，这我很郁闷啊，不能正常访问会影响到网站的用户体验的，不过经过多方查找资料才发现问题原因。wordpress……]]></description>
+				<content:encoded><![CDATA[<header class="entry-header">
+<p class="entry-title">之前在配置WordPress的时候做了个固定链接（%postname%），但在这之后我在我无意间点到文章的中文TAG的链接（例如http://yoursite.com/p/tag/这是中文的）直接给我弹了个404 Not Found，这我很郁闷啊，不能正常访问会影响到网站的用户体验的，不过经过多方查找资料才发现问题原因。wordpress 由于使用的是UTF8字符集.但是URL访问提交过来的URL中文字符是GBK 所以根据这个GBK的字符串查找文章标题，所以说肯定是找不到。。。 也就是说要对这个GBK字符串转换成UTF8</p>
+</header>
+<div class="entry-content">
+<p>经过多方查找，终于知道了不用插件只需简单的改两下代码就可以支持中文URL了。<br />
+以下是修改方法</p>
+<p>修改wp-includes目录下的class-wp.php文件：</p>
+<p>1、找到</p>
+<div>
+<div>
+<pre><code>$pathinfo = $_SERVER['PATH_INFO'];</code></pre>
+</div>
+</div>
+<p>修改为</p>
+<div>
+<div>
+<pre><code>$pathinfo = mb_convert_encoding($_SERVER['PATH_INFO'], 'UTF-8', 'GBK');</code></pre>
+</div>
+</div>
+<p>2、找到</p>
+<div>
+<div>
+<pre><code>$req_uri = $_SERVER['REQUEST_URI'];</code></pre>
+</div>
+</div>
+<p>修改为</p>
+<div>
+<div>
+<pre><code>$req_uri = mb_convert_encoding($_SERVER['REQUEST_URI'], 'UTF-8', 'GBK');</code></pre>
+</div>
+</div>
+<p>以上两处修改都在函数parse_request()内，wordpress4.8和wordpress4.9.8的会有点出入，我把我修改过后的代码的截图放上来</p>
+<p><img layer-src="https://img0.dfjcx.cn/2018/10/批注.png" src="https://img0.dfjcx.cn/2018/10/批注.png" alt="《改两下代码就能让Wordpress支持中文URL》" /></p>
+<p>经过修改之后 WordPress URL里就可以支持中文字符串了，<strong>点个关注点个赞，转载请注明原作者江程训。</strong></p>
+<p><strong>想与我讨论wordpress就来江程训的小程序：346363551</strong></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>https://censujiang.com/180/feed</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>西部动漫节漫展女装返图</title>
+		<link>https://censujiang.com/159</link>
+		<comments>https://censujiang.com/159#comments</comments>
+		<pubDate>Tue, 02 Oct 2018 10:33:01 +0000</pubDate>
+		<dc:creator><![CDATA[江程训]]></dc:creator>
+				<category><![CDATA[化身伪娘]]></category>
+		<category><![CDATA[照骗与相册]]></category>
+		<category><![CDATA[jks]]></category>
+		<category><![CDATA[女装]]></category>
+		<category><![CDATA[漫展]]></category>
+		<category><![CDATA[西部动漫节]]></category>
+
+		<guid isPermaLink="false">https://dfjcx.cn/?p=159</guid>
+		<description><![CDATA[&#8212;-给知乎大佬们的分界线 下面的话是我一个朋友把我的照片发给他的同学，那个同学突然想起我这个人来了。 爱信就信，不信就算]]></description>
+				<content:encoded><![CDATA[<p><img layer-src="http://img0.dfjcx.cn/2018/10/4bfe4684b023d601.jpg" src="http://img0.dfjcx.cn/2018/10/4bfe4684b023d601.jpg" alt="《西部动漫节漫展女装返图》" /><br />
+<img layer-src="http://img0.dfjcx.cn/2018/10/692dd6fa0e3f8930.jpg" src="http://img0.dfjcx.cn/2018/10/692dd6fa0e3f8930.jpg" alt="《西部动漫节漫展女装返图》" /><br />
+<img layer-src="http://img0.dfjcx.cn/2018/10/qq_pic_merged_1538462851722.jpg" src="http://img0.dfjcx.cn/2018/10/qq_pic_merged_1538462851722.jpg" alt="《西部动漫节漫展女装返图》" /><br />
+<img layer-src="http://img0.dfjcx.cn/2018/10/WuTa_2018-10-02_09-38-37.jpg" src="http://img0.dfjcx.cn/2018/10/WuTa_2018-10-02_09-38-37.jpg" alt="《西部动漫节漫展女装返图》" /><br />
+<img layer-src="http://img0.dfjcx.cn/2018/10/WuTa_2018-10-02_11-40-03.jpg" src="http://img0.dfjcx.cn/2018/10/WuTa_2018-10-02_11-40-03.jpg" alt="《西部动漫节漫展女装返图》" /><br />
+<img layer-src="http://img0.dfjcx.cn/2018/10/WuTa_2018-10-02_16-11-50.jpg" src="http://img0.dfjcx.cn/2018/10/WuTa_2018-10-02_16-11-50.jpg" alt="《西部动漫节漫展女装返图》" /><br />
+<img layer-src="http://img0.dfjcx.cn/2018/10/WuTa_2018-10-02_17-26-58.jpg" src="http://img0.dfjcx.cn/2018/10/WuTa_2018-10-02_17-26-58.jpg" alt="《西部动漫节漫展女装返图》" /><br />
+<img layer-src="http://img0.dfjcx.cn/2018/10/WuTa_2018-10-02_17-28-01.jpg" src="http://img0.dfjcx.cn/2018/10/WuTa_2018-10-02_17-28-01.jpg" alt="《西部动漫节漫展女装返图》" /><br />
+<img layer-src="http://img0.dfjcx.cn/2018/10/28185ac15ef85bc2.jpg" src="http://img0.dfjcx.cn/2018/10/28185ac15ef85bc2.jpg" alt="《西部动漫节漫展女装返图》" /></p>
+<p>&#8212;-给知乎大佬们的分界线</p>
+<p>下面的话是我一个朋友把我的照片发给他的同学，那个同学突然想起我这个人来了。</p>
+<p><img layer-src="http://img0.dfjcx.cn/2018/10/3573f3d779caa57a.png" src="http://img0.dfjcx.cn/2018/10/3573f3d779caa57a.png" alt="《西部动漫节漫展女装返图》" /><img layer-src="http://img0.dfjcx.cn/2018/10/3733b6b303918d3e.jpg" src="http://img0.dfjcx.cn/2018/10/3733b6b303918d3e.jpg" alt="《西部动漫节漫展女装返图》" /><img layer-src="http://img0.dfjcx.cn/2018/10/648a83e78f6ff874.jpg" src="http://img0.dfjcx.cn/2018/10/648a83e78f6ff874.jpg" alt="《西部动漫节漫展女装返图》" /><img layer-src="http://img0.dfjcx.cn/2018/10/截屏_20181005_113826.png" src="http://img0.dfjcx.cn/2018/10/截屏_20181005_113826.png" alt="《西部动漫节漫展女装返图》" /></p>
+<p>爱信就信，不信就算</p>
+]]></content:encoded>
+			<wfw:commentRss>https://censujiang.com/159/feed</wfw:commentRss>
+		<slash:comments>14</slash:comments>
+		</item>
+		<item>
+		<title>腾飞的祖国 --40年的改革开放</title>
+		<link>https://censujiang.com/126</link>
+		<comments>https://censujiang.com/126#comments</comments>
+		<pubDate>Sat, 15 Sep 2018 08:16:33 +0000</pubDate>
+		<dc:creator><![CDATA[江程训]]></dc:creator>
+				<category><![CDATA[政治与历史]]></category>
+		<category><![CDATA[中共]]></category>
+		<category><![CDATA[四十周年庆]]></category>
+		<category><![CDATA[投稿]]></category>
+		<category><![CDATA[改革开放]]></category>
+
+		<guid isPermaLink="false">https://dfjcx.cn/?p=126</guid>
+		<description><![CDATA[40年前，党的十一届三中全会得以召开，在这次具有历史意义的会议上，党和国家做出了一个历史性的决定：实行对内改革，对外开放的政策。 当时，计划经济制度的弊端逐渐出现，例如政企职能不分、无视经济规律、过度强调生产资料公有制等导致“大锅饭”现象严重等，从不同程度阻碍了我国的经济发展。这时人民生活依旧贫苦，甚至有些地区温饱也不能解决。 新中国成立……]]></description>
+				<content:encoded><![CDATA[<p>40年前，党的十一届三中全会得以召开，在这次具有历史意义的会议上，党和国家做出了一个历史性的决定：实行对内改革，对外开放的政策。</p>
+<p>当时，计划经济制度的弊端逐渐出现，例如政企职能不分、无视经济规律、过度强调生产资料公有制等导致“大锅饭”现象严重等，从不同程度阻碍了我国的经济发展。这时人民生活依旧贫苦，甚至有些地区温饱也不能解决。</p>
+<p>新中国成立，完成了新民主主义革命。但新中国成立以后模仿苏联建立起来的高度集中的计划经济体制，已严重阻碍了中国生产力的发展。中国需要第二次革命，解放生产力。这种局面不改变不行。怎样改变？答案只有一个：改革。</p>
+<p>这时党的十一届三中全会做出的“改革开放”决定可谓是国家的救命稻草，改革开放的实质是：解放和发展社会生产力，提高综合国力，进一步解放人民思想，建设有中国特色的社会主义。所以我国首先设立了经济特区，首批经济特区有深圳、厦门、汕头和珠海。经济特区内的经济制度实行市场经济，并在不损害我国主权的情况下享有许多优惠政策。</p>
+<p>1980年，当时下海的人们当中有这样一句话：“到深圳去!”，于是，来自全国各地的青年们下海来到各个经济特区，在这里，他们赚到了自己人生当中的第一桶金，同时也渐渐帮着自己身边的人富了起来。</p>
+<p>当时的经济特区有如下特点：</p>
+<p>①在国内划出一定地区,一般选择在港口附近、交通方便的地方,有利于货物流转，节省费用，降低成本；</p>
+<p>②在对外经济活动中推行开放政策，并采用减免关税办法，吸引外资；</p>
+<p>③为外商创造方便安全的投资环境(见国际投资法)，订立优惠条例和保障制度；</p>
+<p>④产品以外销为主；</p>
+<p>⑤集中管理，特区行政管理机构有权制定因地因时制宜的特区管理条例；</p>
+<p>⑥区内企业享有相当的自主权。</p>
+<p>可见，当时的以邓小平为代表的国家领导人并不知道这场改革能给我们的国家带来什么样的弊端，于是就先小心翼翼地在沿海地区划了一片特区进行试验，就像建国以前的陕甘宁特区一样。</p>
+<p>历史证明，邓小平等人的决策是正确的，我国的GDP从1978的3650亿到了现如今的82万亿，人们的生活水平也越来越好，我国社会主要矛盾已经从人民日益增长的物质文化需要同落后的社会生产之间的矛盾转化为人民日益增长的美好生活需要和不平衡不充分的发展之间的矛盾。我国的科技也有了与西方大国竞争的实力。</p>
+<p>邓小平以及他的理念的继承者及其他改革派人士顶住了来自国内保守派的进攻，成功地将改革开放定为中华人民共和国的政策基石之一，并不可逆转地将中国带入世界经济中，与世界经济紧密结合在一起。从1978年至2018年，中华人民共和国由一个尚有2亿人生活在贫困线下，与世隔绝的国家，变成了一个经济繁荣，有着活跃市场的强大经济体，并减少了当时世界近1/5的贫困人口。中国也在迈向工业化的道路上飞速前进，成为新的世界工厂。中国成功实现了计划经济向市场经济的转型，民营经济产值在总量上已经超越了国有经济，成了中国经济增重的重要拉动力量。引进外资同样成为中国经济增长的重要方式，中国为全世界吸引外资金额最多的国家（港、澳、台资金的引入亦被算作外资）。</p>
+<p>对外开放成为中国的一项基本国策，中国的强国之路，是社会主义事业发展的强大动力。改革开放建立了社会主义市场经济体制，使得中国一跃成为世界第二大经济体。改革开放使中国发生了巨大的变化。</p>
+<p>党的十七大报告指出，改革开放是党在新的时代条件下带领人民进行的新的伟大革命，目的就是要解放和发展社会生产力，实现国家现代化，让中国人民富裕起来，振兴伟大的中华民族；就是要推动中国社会主义制度自我完善和发展，赋予社会主义新的生机活力，建设和发展中国特色社会主义；就是要在引领当代中国发展进步中加强和改进党的建设，保持和发展党的先进性，确保党始终走在时代前列，使党和国家得到了快速的发展。</p>
+<p>改革开放是当代中国命运的关键抉择，是发展中国特色社会主义和中华民族伟大复兴的必经之路，只有改革开放，才能发展中国，才能发展社会主义，才能发展马克思主义。这两段话，高度概括了我们为什么要改革，我们应当深刻的领会十一届三中全会提出的这种高度的理论概括。</p>
+<p>中国改革开放成就斐然，通过这个大改革、大开放，实现了三个伟大的转折：</p>
+<p>第一个伟大转折就是从高度集中的计划经济体制向充满生机和活力的社会主义市场经济体制转变；</p>
+<p>第二个伟大转折是从封闭半封闭的社会向全面开放的社会转变；</p>
+<p>第三个伟大转折是人民的生活从温饱转向基本小康的社会转变。如果没有改革开放就不可能实现三个伟大转变。</p>
+<p>现如今，在习近平为总书记的党中央的指导下，中美的新型大国关系得以构建，共同协调治理国际问题；巩固了G20在全球经济治理中的地位，引领G20向长效治理机制转型；人民币加入SDR，使得人民币实际上拥有了全球货币的职能；成立了金砖银行和亚投行，完善了全球金融的治理格局。</p>
+<p>习近平根据古丝绸之路和海上丝绸之路的概念，提出了“一带一路”概念，即丝绸之路经济带和21世纪海上丝绸之路，并提出了“一带一路”倡议。</p>
+<p>“一带一路”将充分依靠中国与有关国家既有的双多边机制，借助既有的、行之有效的区域合作平台，一带一路旨在借用古代丝绸之路的历史符号，高举和平发展的旗帜，积极发展与沿线国家的经济合作伙伴关系，共同打造政治互信、经济融合、文化包容的利益共同体、命运共同体和责任共同体。</p>
+<p>目前，“一带一路&#8221;经济区开放后，承包工程项目突破3000个。2015年，中国国企业共对“一带一路”相关的49个国家进行了直接投资，投资额同比增长18.2%。2015年，我国承接“一带一路”相关国家服务外包合同金额178.3亿美元，执行金额121.5亿美元，同比分别增长42.6%和23.45%。</p>
+<p>截至2017年底，中欧班列国内开行城市达38个；到达欧洲13个国家36个城市，较2016年新增5个国家23个城市；铺画中欧班列运行线路达61条。中欧班列全程运行时间从开行初期的２０天以上逐步缩短到12至14天；整体运输费用较开行初期下降约40％；货源品类不断丰富，由开行初期的手机、电脑等IT产品逐步扩大到衣服鞋帽、汽车及配件、粮食、葡萄酒、咖啡豆、木材等品类，涵盖沿线人民生产生活多个方面，除了经济方面，中国与沿线国家在教育、医疗、科技、金融等方面也有许多合作，实现了“一带一路”国家的互利共赢。</p>
+<p>习近平在为党的十九大作的报告《决胜全面建成小康社会  夺取新时代中国特色社会主义伟大胜利》中写道，过去五年取得了改革开放和社会主义现代化建设的历史性成就：</p>
+<p>经济建设取得重大成就。区域发展协调性增强，&#8221;一带一路&#8221;建设、京津冀协同发展、长江经济带发展成效显著。创新驱动发展战略大力实施，创新型国家建设成果丰硕，天宫、蛟龙、天眼、悟空、墨子、大飞机等重大科技成果相继问世。南海岛礁建设积极推进。开放型经济新体制逐步健全，对外贸易、对外投资、外汇储备稳居世界前列。</p>
+<p>全方位外交布局深入展开。全面推进中国特色大国外交，形成全方位、多层次、立体化的外交布局，为我国发展营造了良好外部条件。实施共建&#8221;一带一路&#8221;倡议，发起创办亚洲基础设施投资银行，设立丝路基金，举办首届&#8221;一带一路&#8221;国际合作高峰论坛、亚太经合组织领导人非正式会议、二十国集团领导人杭州峰会、金砖国家领导人厦门会晤、亚信峰会。倡导构建人类命运共同体，促进全球治理体系变革。我国国际影响力、感召力、塑造力进一步提高，为世界和平与发展作出新的重大贡献。</p>
+<p>可见，中国的改革开放取得了令世界瞩目的成就，从邓小平到习近平，一代又一代的国家领导人让中国继续在各领域弯道超车。</p>
+<p>如果说新中国的成立使我们站起来，那么改革开放使我们富起来。中华民族伟大复兴的日子即将来临，让我们也祝祖国繁荣昌盛吧！</p>
+]]></content:encoded>
+			<wfw:commentRss>https://censujiang.com/126/feed</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>到底哪个才是段友的新家？今日头条和最右的暗中争斗</title>
+		<link>https://censujiang.com/115</link>
+		<comments>https://censujiang.com/115#comments</comments>
+		<pubDate>Tue, 14 Aug 2018 02:22:30 +0000</pubDate>
+		<dc:creator><![CDATA[江程训]]></dc:creator>
+				<category><![CDATA[市场分析]]></category>
+		<category><![CDATA[热点观察]]></category>
+		<category><![CDATA[今日头条]]></category>
+		<category><![CDATA[搞笑内容]]></category>
+		<category><![CDATA[最右]]></category>
+		<category><![CDATA[皮皮搞笑]]></category>
+		<category><![CDATA[皮皮虾]]></category>
+		<category><![CDATA[真假美猴王]]></category>
+
+		<guid isPermaLink="false">https://dfjcx.cn/?p=115</guid>
+		<description><![CDATA[本文仅供参考，某些观点不宜评论，具体情况以后续事件为准 序 今天这篇文章啊，还得从几个月前讲起。今年4月10日，国家相关部门下令永久关停今日头条旗下APP“内涵段子” 内涵段子官网的公告 此消息一出，可谓是震惊了各位段友，没过几天段友也自己发布过聚内涵等产品，但都以失败告终，这不是我今天所说的重点。 皮皮搞笑横空出世 此话怎讲？这事还要从……]]></description>
+				<content:encoded><![CDATA[<blockquote>
+<p>本文仅供参考，某些观点不宜评论，具体情况以后续事件为准</p>
+</blockquote>
+<h1>序</h1>
+<p>今天这篇文章啊，还得从几个月前讲起。今年4月10日，国家相关部门下令永久关停今日头条旗下APP“内涵段子”</p>
+<div class="pgc-img">
+<p><img layer-src="http://p3.pstatp.com/large/pgc-image/1534155234213beaee77887" src="http://p3.pstatp.com/large/pgc-image/1534155234213beaee77887" alt="《到底哪个才是段友的新家？今日头条和最右的暗中争斗》" /></p>
+<p class="pgc-img-caption">内涵段子官网的公告</p>
+</div>
+<p>此消息一出，可谓是震惊了各位段友，没过几天段友也自己发布过聚内涵等产品，但都以失败告终，这不是我今天所说的重点。</p>
+<h1>皮皮搞笑横空出世</h1>
+<p>此话怎讲？这事还要从我十几天前无意间发现皮皮搞笑APP在我手机上说起，当我意外地在手机上发现这款APP的时候，我是惊讶的：谁特么往我手机上面装东西？于是我怀着好奇心的缘故打开了这款APP</p>
+<div class="pgc-img">
+<p><img layer-src="http://p1.pstatp.com/large/pgc-image/1534155981532a9e3ddfceb" src="http://p1.pstatp.com/large/pgc-image/1534155981532a9e3ddfceb" alt="《到底哪个才是段友的新家？今日头条和最右的暗中争斗》" /></p>
+<p class="pgc-img-caption">这是这个APP现在的截图，我找不到之前的了</p>
+</div>
+<p>这玩意不是内涵段子吗？难道段友又做了一个APP？但是当我点开底部栏的“我的”的时候，我愣住了：这玩意怎么同步了我在最右的资料？</p>
+<div class="pgc-img">
+<p><img layer-src="http://p1.pstatp.com/large/pgc-image/1534156320517bf1bff1efd" src="http://p1.pstatp.com/large/pgc-image/1534156320517bf1bff1efd" alt="《到底哪个才是段友的新家？今日头条和最右的暗中争斗》" /></p>
+<p class="pgc-img-caption">左边是皮皮搞笑，右边是最右</p>
+</div>
+<p>于是我想了一想，作为最右的用户：右友，我之前下载过最右极速版APP，为了验证这一猜想，我打开了手机里面的开发者工具箱</p>
+<div class="pgc-img"><img layer-src="http://p3.pstatp.com/large/pgc-image/1534156565450aaa2e97229" src="http://p3.pstatp.com/large/pgc-image/1534156565450aaa2e97229" alt="《到底哪个才是段友的新家？今日头条和最右的暗中争斗》" /></div>
+<p>根据上面的包名cn.ixiaochuan.zuiyouLite可以得出，这玩意就是我之前下载的最右极速版没错了。。。</p>
+<div class="pgc-img"><img layer-src="http://p9.pstatp.com/large/pgc-image/15341566672432c654bf838" src="http://p9.pstatp.com/large/pgc-image/15341566672432c654bf838" alt="《到底哪个才是段友的新家？今日头条和最右的暗中争斗》" /></div>
+<p>那么为什么最右的母公司小川科技会把最右极速版搞成接纳段友的APP？抱着这一疑问我加入了皮皮搞笑的用户Q群（这里我没有截图展示给你们，原因在后面）</p>
+<p><strong>江程训：我的最右账号为什么可以登录皮皮搞笑？【附上截图】</strong></p>
+<p><strong>管理员1：我们之前共用过服务器</strong></p>
+<p><strong>江程训：不对啊&#8230;.皮皮搞笑不是最右（小川科技）旗下的吗？</strong></p>
+<p><strong>管理员1：皮皮搞笑不是最右旗下的，这是段友们一起研发的APP，我们是另外一家公司。</strong></p>
+<p><strong>江程训：不对啊，这个以前不是最右极速版吗？怎么变成皮皮搞笑了？【附上截图】</strong></p>
+<p><strong>管理员1：最右极速版？没听说过。</strong></p>
+<p><strong>江程训：那么为什么我的最右账号可以登录皮皮搞笑？</strong></p>
+<p><strong>管理员2：他不是跟你说过吗？我们之前共用过服务器的。</strong></p>
+<p><strong>江程训：你当我智障吗？即使一台服务器也可以划分不同的SQL的。</strong></p>
+<p><strong>管理员2：。。。。</strong></p>
+<p><strong>群员1：什么**SQl，你SQl了不起啊你</strong></p>
+<p><strong>群员2：是啊是啊</strong></p>
+<p><strong>江程训：SQL是数据库啊&#8230;.你们不懂电脑吗？</strong></p>
+<p><strong>【您已被“管理员1”移出本群】</strong></p>
+<p>我去你大爷的&#8230;..总之就是这样，他们死活不承认皮皮搞笑是最右旗下的。于是我抱着这样的疑问，在最右官方群的群管群提出了“皮皮搞笑是不是最右旗下的软件”的这样一个疑问，于是得到了皮皮搞笑确实是最右旗下的APP的这样一个证实。</p>
+<div class="pgc-img"><img layer-src="http://p3.pstatp.com/large/pgc-image/15342359592161e2f6b6e90" src="http://p3.pstatp.com/large/pgc-image/15342359592161e2f6b6e90" alt="《到底哪个才是段友的新家？今日头条和最右的暗中争斗》" /></div>
+<div class="pgc-img"><img layer-src="http://p3.pstatp.com/large/pgc-image/15342359672510ef7545480" src="http://p3.pstatp.com/large/pgc-image/15342359672510ef7545480" alt="《到底哪个才是段友的新家？今日头条和最右的暗中争斗》" /></div>
+<div class="pgc-img"><img layer-src="http://p1.pstatp.com/large/pgc-image/15342359734390642831501" src="http://p1.pstatp.com/large/pgc-image/15342359734390642831501" alt="《到底哪个才是段友的新家？今日头条和最右的暗中争斗》" /></div>
+<p>为了继续证实这一结论，我还联系了差点就进了最右公司的某知情人士&#8230;&#8230;</p>
+<div class="pgc-img"><img layer-src="http://p9.pstatp.com/large/pgc-image/153423605114747d499991f" src="http://p9.pstatp.com/large/pgc-image/153423605114747d499991f" alt="《到底哪个才是段友的新家？今日头条和最右的暗中争斗》" /></div>
+<div class="pgc-img"><img layer-src="http://p3.pstatp.com/large/pgc-image/1534236098609cddceae4a5" src="http://p3.pstatp.com/large/pgc-image/1534236098609cddceae4a5" alt="《到底哪个才是段友的新家？今日头条和最右的暗中争斗》" /></div>
+<p>在这里我说的ICP备案是这个。。。为了证实皮皮搞笑是最右（小川科技）的，我还专门把他的分享链接提取出来，这是我随便分享的一个链接。</p>
+<div class="pgc-img"><img layer-src="http://p1.pstatp.com/large/pgc-image/1534236342370231e09c8be" src="http://p1.pstatp.com/large/pgc-image/1534236342370231e09c8be" alt="《到底哪个才是段友的新家？今日头条和最右的暗中争斗》" /></div>
+<p>让我们打开这个域名的根目录，我们会惊奇的发现：这他喵不是最右Web版吗？</p>
+<div class="pgc-img"><img layer-src="http://p3.pstatp.com/large/pgc-image/15342364907081e78a17dc8" src="http://p3.pstatp.com/large/pgc-image/15342364907081e78a17dc8" alt="《到底哪个才是段友的新家？今日头条和最右的暗中争斗》" /></div>
+<p>然后，我们把他的子域名改成www。。。。</p>
+<div class="pgc-img"><img layer-src="http://p3.pstatp.com/large/pgc-image/153423657400304bcd5e621" src="http://p3.pstatp.com/large/pgc-image/153423657400304bcd5e621" alt="《到底哪个才是段友的新家？今日头条和最右的暗中争斗》" /></div>
+<p>是的没错了，这就是皮皮搞笑的应用页，我还顺便找了两个BUG（也有可能不是），第一个BUG是网页会被识别成英文网页，第二个是他的meta元素写了两个UTF8.。。。（你看看我作为程序员多敬业！）</p>
+<div class="pgc-img"><img layer-src="http://p3.pstatp.com/large/pgc-image/1534236606394c90771b7f1" src="http://p3.pstatp.com/large/pgc-image/1534236606394c90771b7f1" alt="《到底哪个才是段友的新家？今日头条和最右的暗中争斗》" /></div>
+<div class="pgc-img"><img layer-src="http://p3.pstatp.com/large/pgc-image/153423692625479498fd585" src="http://p3.pstatp.com/large/pgc-image/153423692625479498fd585" alt="《到底哪个才是段友的新家？今日头条和最右的暗中争斗》" /></div>
+<p>通过ICP备案的查询，也可以确定皮皮搞笑是最右旗下的APP。</p>
+<div class="pgc-img">
+<p><img layer-src="http://p3.pstatp.com/large/pgc-image/15342371793561598c12a0a" src="http://p3.pstatp.com/large/pgc-image/15342371793561598c12a0a" alt="《到底哪个才是段友的新家？今日头条和最右的暗中争斗》" /></p>
+<p class="pgc-img-caption">北京小川科技有限公司就是最右公司，这些信息也可以去企查查和天眼查查看</p>
+</div>
+<h1>今日头条也没闲着</h1>
+<p>那么？今日头条有没有做类似于内涵段子的产品呢？答案是当然有，在内涵段子被永久封禁之后，今日头条内部的两位工程师在西安成立了西安四季恒通科技有限公司，而这两位在北京字节跳动公司也就是今日头条的母公司的专利中，均有出现。据了解，这两人是今日头条的资深研发工程师。</p>
+<div class="pgc-img"><img layer-src="http://p3.pstatp.com/large/pgc-image/153423770248328593babad" src="http://p3.pstatp.com/large/pgc-image/153423770248328593babad" alt="《到底哪个才是段友的新家？今日头条和最右的暗中争斗》" /></div>
+<p>可以说是非常玄了。。。不过皮皮虾APP看起来还是很简洁的，至于是不是今日头条旗下的app呢？</p>
+<div class="pgc-img"><img layer-src="http://p9.pstatp.com/large/pgc-image/15342380263687fca5734ce" src="http://p9.pstatp.com/large/pgc-image/15342380263687fca5734ce" alt="《到底哪个才是段友的新家？今日头条和最右的暗中争斗》" /></div>
+<p>在寻找这个问题的同时，我查到了一则新闻，而这则新闻也证实了皮皮虾虽然不是今日头条实际控股，但是确实皮皮虾是今日头条旗下的产品。。。。</p>
+<div class="pgc-img"><img layer-src="http://p9.pstatp.com/large/pgc-image/153423840770807ae3474bc" src="http://p9.pstatp.com/large/pgc-image/153423840770807ae3474bc" alt="《到底哪个才是段友的新家？今日头条和最右的暗中争斗》" /></div>
+<p>不过。。。意思是我来晚了只能重新注册一个号咯？不过话说回来，今日头条的副总也在皮皮虾的微头条下面证实了这一消息</p>
+<div class="pgc-img"><img layer-src="http://p3.pstatp.com/large/pgc-image/153423863755192697c31de" src="http://p3.pstatp.com/large/pgc-image/153423863755192697c31de" alt="《到底哪个才是段友的新家？今日头条和最右的暗中争斗》" /></div>
+<div class="pgc-img"><img layer-src="http://p3.pstatp.com/large/pgc-image/15342386452564362a7edae" src="http://p3.pstatp.com/large/pgc-image/15342386452564362a7edae" alt="《到底哪个才是段友的新家？今日头条和最右的暗中争斗》" /></div>
+<div class="pgc-img"><img layer-src="http://p1.pstatp.com/large/pgc-image/15342386511837272cd3102" src="http://p1.pstatp.com/large/pgc-image/15342386511837272cd3102" alt="《到底哪个才是段友的新家？今日头条和最右的暗中争斗》" /></div>
+<p>停止同步账号数据这也是规避法律风险的一个绝招啊</p>
+<div class="pgc-img"><img layer-src="http://p3.pstatp.com/large/pgc-image/15342387409492d31064e39" src="http://p3.pstatp.com/large/pgc-image/15342387409492d31064e39" alt="《到底哪个才是段友的新家？今日头条和最右的暗中争斗》" /></div>
+<p>不过最右旗下的皮皮搞笑app也在八月初将app图标从这个</p>
+<div class="pgc-img"><img layer-src="http://p3.pstatp.com/large/pgc-image/153423891841022fd764478" src="http://p3.pstatp.com/large/pgc-image/153423891841022fd764478" alt="《到底哪个才是段友的新家？今日头条和最右的暗中争斗》" /></div>
+<p>是不是有一种似曾相识的感觉？（如下图）</p>
+<div class="pgc-img"><img layer-src="http://p3.pstatp.com/large/pgc-image/1534238969717ab772cd9e9" src="http://p3.pstatp.com/large/pgc-image/1534238969717ab772cd9e9" alt="《到底哪个才是段友的新家？今日头条和最右的暗中争斗》" /></div>
+<p>配色和基本元素一模一样。。。。这也是为什么段友们把皮皮搞笑当成新家的原因吧，反正现在我在各大应用市场看到段友们开车滴滴。。。不过现在皮皮搞笑把logo换成了这个</p>
+<div class="pgc-img"><img layer-src="http://p9.pstatp.com/large/pgc-image/1534239099061b46b407e8b" src="http://p9.pstatp.com/large/pgc-image/1534239099061b46b407e8b" alt="《到底哪个才是段友的新家？今日头条和最右的暗中争斗》" /></div>
+<p>果！然！是！完！美！的！规！避！侵！权！的！风！险！</p>
+<div class="pgc-img"><img layer-src="http://p9.pstatp.com/large/pgc-image/15342391784466310fa5494" src="http://p9.pstatp.com/large/pgc-image/15342391784466310fa5494" alt="《到底哪个才是段友的新家？今日头条和最右的暗中争斗》" /></div>
+<p>当然这玩意还在今天发起了邀请好友回家的活动，我看张一鸣的皮皮虾怕是有难了。</p>
+<div class="pgc-img"><img layer-src="http://p9.pstatp.com/large/pgc-image/1534239271371cb05b8614e" src="http://p9.pstatp.com/large/pgc-image/1534239271371cb05b8614e" alt="《到底哪个才是段友的新家？今日头条和最右的暗中争斗》" /></div>
+<p>不过话说回来，内涵段子究竟是什么原因被封的呢？</p>
+<p>其实我不仅仅是今日头条的资深用户（2014年注册）和最右的资深用户（2015年注册），还是内涵段子的。。。。也不算太资深，只能算是很了解（2014年注册）。那么我觉得我可以回答一些问题</p>
+<h1>1.为什么内涵段子会被封禁</h1>
+<p>我本人是在使用今日头条之后再接触内涵段子的，其实我感觉内涵段子在当时社区氛围总体还算不错，不过因为里面的内容我不感兴趣的原因，所以说就没有经常玩内涵段子。但是内涵段子说实话风气也变得越来越差，虽然没有出现快手那样的严重社会危害性行为，但是看个帖子是真心不想看底下的评论，杠精来了就一堆人撕逼，不分场合评论搞得楼主尴尬的要死的情况都有。。。当然这不是重点，重点是内涵段子是一个凝聚力极强的社区，甚至凝聚力发展到了线下，具体什么的我不好描述（怕这篇文章审核不过），总之就是社区氛围不好又有人发起线下聚会怕带坏小孩子。</p>
+<p>在此之前字节跳动的中心一直放在其主打应用今日头条，所以就没有把重心放在他更早推出的产品内涵段子上，再加上一个社区壮大之后总会出现“林子大了什么鸟儿都有”的情况，社区治理也不到位导致内涵段子被永久封禁，所以我觉得是很可惜的，希望今日头条能够借助皮皮虾在搞笑内容领域东山再起。</p>
+<h1>2.为什么最右会做皮皮搞笑这个产品</h1>
+<p>我觉得这还是跟最右公司的盈利能力和投资讲起。</p>
+<p>最右公司，也就是北京小川科技有限公司，在2014年成立，法人是前迅雷CTO李金波，小川科技成立不到两个月就有普华资本的上千万投资，可以说是含着金钥匙出生的了。</p>
+<p>但是最右公司自始至终都没有真正盈利过，之前在最右的推荐流加入广告还被大量右友（最右用户）反感过，从天使轮到B轮，我也不知道这些投资人是怎么想的，反正我觉得他们是这样想的：这家公司拥有很多年轻用户，肯定有钱途。</p>
+<div class="pgc-img"><img layer-src="http://p3.pstatp.com/large/pgc-image/15342402884026367d834ca" src="http://p3.pstatp.com/large/pgc-image/15342402884026367d834ca" alt="《到底哪个才是段友的新家？今日头条和最右的暗中争斗》" /></div>
+<p>投资人不急，但是最右公司的内部人员急啊，所以他们抱着割韭菜的幻想，看向了内涵段子的用户：段友。。。</p>
+<p>于是就有了皮皮搞笑这个APP，至始至终让我最佩服他们的不是他们眼光犀利，而是他们打死都不承认皮皮搞笑是自家的产品（笑）。。。</p>
+<h1>文章的最后</h1>
+<p>到了今天，皮皮虾和皮皮搞笑该规避的法律风险都大部分规避过了，该有的基础用户也有了。此时的今日头条和最右可谓是站在了同一条起跑线上，就看谁跑得快跑的妙了，我个人认为今日头条如果不使出什么大杀招是干不过最右的，毕竟皮皮搞笑的起步比皮皮虾还早，而且舆论的倾向也大多数在那边。</p>
+<p>最后说一句：遇事请透过现象看本质。</p>
+<p><strong>写了这么多，也不要求别的，点个关注点个赞就行，转载请注明原作者江程训。</strong></p>
+<p><span id="more-115"></span></p>
+<h1>后记</h1>
+<p>目前皮皮搞笑的开发者变成了小步科技，也就是制作《快读》app的那位（目前在应用市场找不到了）</p>
+<p><a title="到底哪个才是段友的新家？今日头条和最右的暗中争斗" href="https://www.dofan.cn/94q1p7p0s3hr82617jy3" target="_blank" rel="noopener" rel="nofollow" ><img layer-src="https://a0.kuyingfang.cn/2018/08/63de5a08672e0382915d40272c1f40a5-946x1024.png" src="https://a0.kuyingfang.cn/2018/08/63de5a08672e0382915d40272c1f40a5-946x1024.png" alt="《到底哪个才是段友的新家？今日头条和最右的暗中争斗》" /></a></p>
+<p><a title="到底哪个才是段友的新家？今日头条和最右的暗中争斗" href="https://www.dofan.cn/po9sy9a58ifjac9br2xh" target="_blank" rel="noopener" rel="nofollow" ><img layer-src="https://a0.kuyingfang.cn/2018/08/b576ef885d2d54551923c2e218fecf1d-946x1024.png" src="https://a0.kuyingfang.cn/2018/08/b576ef885d2d54551923c2e218fecf1d-946x1024.png" alt="《到底哪个才是段友的新家？今日头条和最右的暗中争斗》" /></a></p>
+<p>甚至最右的员工：小百之前都在QQ空间发过快读的推广链接</p>
+<p><a title="到底哪个才是段友的新家？今日头条和最右的暗中争斗" href="https://www.dofan.cn/8b1d1ae87e448934f0d8d536fe0d7e0a" target="_blank" rel="noopener" rel="nofollow" ><img layer-src="https://a0.kuyingfang.cn/2018/08/6e9b3dd30a0757629ed9da92743ee0b7-264x1024.jpg" src="https://a0.kuyingfang.cn/2018/08/6e9b3dd30a0757629ed9da92743ee0b7-264x1024.jpg" alt="《到底哪个才是段友的新家？今日头条和最右的暗中争斗》" /></a></p>
+<p>甚至在最右的招聘广告都标明了李金波创业推出快读这件事</p>
+<p><a title="到底哪个才是段友的新家？今日头条和最右的暗中争斗" href="https://www.dofan.cn/fslvrqwnyx2_2ue05a" target="_blank" rel="noopener" rel="nofollow" ><img layer-src="https://a0.kuyingfang.cn/2018/08/743b7111159622890c85bd9d935467cc-946x1024.png" src="https://a0.kuyingfang.cn/2018/08/743b7111159622890c85bd9d935467cc-946x1024.png" alt="《到底哪个才是段友的新家？今日头条和最右的暗中争斗》" /></a></p>
+<p>我记得之前AppStore的最右的开发者是“北京小步科技有限公司”，现在改成了“北京小川科技有限公司”</p>
+<p>因为小步科技的股东和董事里面现在没有李金波，所以我进行了一番查询，但我至始至终都没有查到北京小步科技有限公司的变更记录，也许是快读是盗版了其他网站的小说，所以李金波怕自己名声有什么问题就没有让自己的名字出现在小步科技的企业档案里，而这款软件推出后爆红但是李金波又关停此应用，而后李金波先做了水滴宝宝再做了最右app。</p>
+<p>我们不难看出，皮皮搞笑确实跟最右有千丝万缕的联系，无论小川科技怎样更改都不能否认皮皮搞笑是由最右推出的app，那位id叫杨前途的右友，在杠别人之前先把这些查清楚吧。</p>
+<p>对于这篇文章造成的对小川科技舆论态势，我深表歉意。</p>
+<p>不争不抢呢，不代表咱怕。不叫地主呢，不代表咱没有炸！安排！</p>
+]]></content:encoded>
+			<wfw:commentRss>https://censujiang.com/115/feed</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>致帆友的一封信：这一年来我在做什么</title>
+		<link>https://censujiang.com/137</link>
+		<comments>https://censujiang.com/137#respond</comments>
+		<pubDate>Tue, 31 Jul 2018 11:29:07 +0000</pubDate>
+		<dc:creator><![CDATA[江程训]]></dc:creator>
+				<category><![CDATA[诗歌与散文]]></category>
+		<category><![CDATA[公开信]]></category>
+		<category><![CDATA[创业]]></category>
+		<category><![CDATA[散文]]></category>
+		<category><![CDATA[逗帆]]></category>
+
+		<guid isPermaLink="false">https://dfjcx.cn/?p=137</guid>
+		<description><![CDATA[想动笔，但是又不知道写什么，有太多话想给大家说。先给大家说一下这一年来的经历吧，如果不想看也可以直接跳到后面第一个粗体字部分。 一年前，我的女儿诞生了，她那时候还没有正式的名字，只有一个代号Ofter，在最初的兴奋过去之后，我冷静下来，Ofter能否一直存在，一直陪伴在我身边，一直能跟我那天南地北的朋友聊天？ 那个时候我还没有从Siou科……]]></description>
+				<content:encoded><![CDATA[<p>想动笔，但是又不知道写什么，有太多话想给大家说。先给大家说一下这一年来的经历吧，如果不想看也可以直接跳到后面第一个粗体字部分。</p>
+<p>一年前，我的女儿诞生了，她那时候还没有正式的名字，只有一个代号Ofter，在最初的兴奋过去之后，我冷静下来，Ofter能否一直存在，一直陪伴在我身边，一直能跟我那天南地北的朋友聊天？</p>
+<p>那个时候我还没有从Siou科技，也就是当时的零壹联盟出来，当时的我很中二，为了Ofter能够在我精力不足的情况下一直保持更新，是我和我在零壹的同事，一起退出零壹，创立了逗帆团队。那时候我还很懵懂，不知道创业的艰辛，只知道一直往前冲就对了。</p>
+<p>因为我很喜欢李清照写的一首词：渔家傲。所以我给予了Ofter一个诗情画意的名字：逗帆晓雾。在这时，逗帆晓雾的运营策略已经定下来了，通过QQ平台招揽新用户然后引流到APP的方式来得以保留用户活跃性。我现在说实话也挺佩服我当时的决定，因为这是逗帆晓雾现在能一直运营下去的重要原因。</p>
+<p>但是事情总不是一帆风顺，当我们在2017年7月28日发布1.0的APP时，当日下载量还没有多少，三四十个，当时我们心想，这个产品的用户和下载量肯定会蹭蹭蹭地上去的，但是事情出乎意料，当我们在8月27日更新1.1版本的时候，下载量才200次，远低于我们1000人的估计。</p>
+<p>当时也确实给我们带来了很大的打击，但是中二的年轻人是不服输的，我们除了继续运营逗帆晓雾之外，还继续新开了项目逗帆ACG和逗帆小说网，事实上当时我们已经疯狂了，以为自己能够通过做全家桶的方式来使得逗帆团队在几十年后成为世界知名的组织或者公司（当时我们确实有公司化的决定），现在想起来也不过是一场中二的闹剧罢了。</p>
+<p>人的精力是有限的，当我们去搞其他产品的时候，却顾不上自己的根本：逗帆晓雾。当时逗帆晓雾的用户不知道为何突然上涨，这也让我们很高兴，但是麻烦的事情就来了，以前测试的时候没暴露的BUG现在暴露了，很多人来反馈，我们当时也是在是修复的很慢，一方面是逗帆团队大多数人处在人生的重要阶段初三，能在周末继续搞这些已经算是父母开明了；另一方面则是其他的产品还没见起色，我们看到了我们与大佬的差距，想尽力完善。</p>
+<p>于是新用户来得多，也走得快，经过了不到两个月，逗帆晓雾已经没有多少人使用了。</p>
+<p>此时逗帆团队内部也出现了动摇：我凭什么要给江程训这个傻逼打工？记得那是2018年年初，民爷给我提出了辞职的申请，我那天晚上给他谈了很久，最后他说了一句让我无法反驳的话：“我觉得这个团队没有未来。”</p>
+<p>是的，一个做事不踏实，一个想着不切实际的东西，一个不关心用户体验的团队怎么能够有未来！！？</p>
+<p>当我醒悟下来的时候，逗帆团队的技术人员已经走的所剩无几了。</p>
+<p>逗帆团队在这寒假执行了一次艰难的决定，关停逗帆ACG和逗帆小说网，注重用户体验，并在自己能力还不够的情况下潜心完善人工智能。</p>
+<p>初三下学期，也是逗帆晓雾用户增长最快的时期，APP用户从6000增长到2w，qq平台的用户从4w增长到19w。</p>
+<p>到这里，后面的事情你们也知道了，发布2.0，以及对逗帆主站进行试水。</p>
+<p><em><strong>回忆这么多</strong></em>，我也不是来说我站起来又跌到又爬起来，因为我这个人喜欢用事实来论据。</p>
+<p>事实上，最近有很多朋友给我说，你一个00后创业有意义吗，挣得了几分钱吗？甚至还有人对我说：“你看我们做视频的都赚了十几万吧啦吧啦。”</p>
+<p>这没意义，朋友，谁没有一个中二的时候？谁心中没有那片星辰大海？</p>
+<p>有人在青春时恋爱，有人在青春幻想自己是大魔法师，还有的人在青春时和别人在RPG游戏里面打下自己的一片天地，而我们，选择去编程。</p>
+<p>我很清楚我在干什么，在搞好学习的情况下，我觉得青春就应该奉献，无论是给社会带来进步，给人们的生活带来便利，甚至是去安慰一个患有抑郁症的孩子，这都是值得的。</p>
+<p>至于盈利问题，有人问我为什么不像其他QQ机器人一样加各种广告位，我说，这对用户不好，别人只是想单纯的聊个天，摆脱孤独，你贴这么多广告干嘛。还有人说为什么你们没考虑盈利，我只是说，时候未到而已。</p>
+<p>这些天我一直把用户的体验放在第一位，情怀这个东西虽说是一句空谈，但是你对用户好不好用户自己是能真心感受到的，所以我始终没有设置什么逗帆晓雾vip，因为我知道，使用逗帆晓雾的不仅有那些失去父母关爱的孩子，还有患有社交恐惧症的独居上班族，他们想要的是一个能随时陪伴在身边的真心朋友，而不是一个冰冷的由资本家造出来的机器人。</p>
+<p>所以我知道哪些钱该赚，哪些钱不该赚。</p>
+<p>如今的逗帆团队已经不是以往的逗帆团队了，不仅仅是技术团队换了一波，更是因为我心态的改变：我当年创造他是为了让逗帆晓雾继续更新，现在则是希望它能给社会创造更多价值。</p>
+<p>所以，同行的冷嘲热讽并不是我们站稳脚跟的必要条件，忠诚度高的用户才是。</p>
+<p>我也希望后来逗帆团队入职的00后小伙伴们能明白，我们很现实，但是我们也有理想。</p>
+<p>我知道我在这篇文章立下了很多Flag，当未来的你们有幸翻到这篇文章，如果我真的被“王境泽定律”了，那么请记住此时的我已经是一名不择手段的商人了，但是，我不希望变成那样丑恶的人。</p>
+<p>正如<a href="http://www.dofan.ltd" target="_blank" rel="noopener" rel="nofollow" >逗帆团队</a>的口号所说，我们喜爱二次元文化，喜爱各种废萌元素，但我们不颓废，我们永远是朝气蓬勃的青少年。</p>
+<p style="text-align: right;">2018年7月31日约19时</p>
+<p style="text-align: right;">完笔于川东道照母山脚下</p>
+]]></content:encoded>
+			<wfw:commentRss>https://censujiang.com/137/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>站长进小黑屋随后又被C站点名，B站20日的事件引人深思</title>
+		<link>https://censujiang.com/135</link>
+		<comments>https://censujiang.com/135#respond</comments>
+		<pubDate>Sat, 21 Jul 2018 13:24:18 +0000</pubDate>
+		<dc:creator><![CDATA[江程训]]></dc:creator>
+				<category><![CDATA[市场分析]]></category>
+		<category><![CDATA[热点观察]]></category>
+		<category><![CDATA[动漫]]></category>
+		<category><![CDATA[哔哩哔哩]]></category>
+		<category><![CDATA[狗粉丝文化]]></category>
+		<category><![CDATA[社区运营]]></category>
+		<category><![CDATA[色情]]></category>
+
+		<guid isPermaLink="false">https://dfjcx.cn/?p=135</guid>
+		<description><![CDATA[本文仅供参考，某些观点不宜评论，具体情况以后续事件为准 7月20日可谓是B站最热闹的一天，先是B站站长bishi太上皇因玩梗过度进了小黑屋，如下图所示 原文已无法找到，但是据相关知情人士介绍（忘了这位仁兄叫什么名字了），B站站长当时转载了一条动态，如下图，原因是b站很多老人不满快手的主播通过低劣的手段对B站的氛围造成了破坏，随后愈演愈烈（……]]></description>
+				<content:encoded><![CDATA[<blockquote>
+<p>本文仅供参考，某些观点不宜评论，具体情况以后续事件为准</p>
+</blockquote>
+<p>7月20日可谓是B站最热闹的一天，先是B站站长bishi太上皇因玩梗过度进了小黑屋，如下图所示</p>
+<div class="pgc-img"><img layer-src="http://p3.pstatp.com/large/pgc-image/15321752649482c3bf7fd5b" src="http://p3.pstatp.com/large/pgc-image/15321752649482c3bf7fd5b" alt="《站长进小黑屋随后又被C站点名，B站20日的事件引人深思》" /></div>
+<p>原文已无法找到，但是据相关知情人士介绍（忘了这位仁兄叫什么名字了），B站站长当时转载了一条动态，如下图，原因是b站很多老人不满快手的主播通过低劣的手段对B站的氛围造成了破坏，随后愈演愈烈（很抱歉我没办法形容，因为我当时没有深入此事件），站长就替这些老人站出来发声，然后被一群顺手举报的举报了…..（我猜的）实际情况是bishi自己违反小黑屋处罚条例又不搞双标自己进去了。</p>
+<div class="pgc-img"><img layer-src="http://p1.pstatp.com/large/pgc-image/1532174540299cbe84b28f8" src="http://p1.pstatp.com/large/pgc-image/1532174540299cbe84b28f8" alt="《站长进小黑屋随后又被C站点名，B站20日的事件引人深思》" /></div>
+<p>站长被封7天，b站的老人们是痛心疾首，注册没两年的萌新完全是看笑话，但是接下来的事件令所有B站用户不安了：</p>
+<div class="pgc-img"><img layer-src="http://p1.pstatp.com/large/pgc-image/1532174540291dea17e16a3" src="http://p1.pstatp.com/large/pgc-image/1532174540291dea17e16a3" alt="《站长进小黑屋随后又被C站点名，B站20日的事件引人深思》" /></div>
+<p>C站（CCTV央视）于昨天下午16:35分在其13台批评互联网低俗动漫，其中特别点名批评B站上存在一些后宫、兄妹恋等不符合青少年意识的健康教育的动漫，这下本以为可以继续看bishi好戏的吃瓜群众都放下了瓜，啥？C站要整我大B站？</p>
+<p>B站官方在BML举办之时，紧急清理了C站所提到的《腹黑妹妹控兄记》《ISLAND》等作品，并在23:00左右发布了如下公告</p>
+<div class="pgc-img"><img layer-src="http://p1.pstatp.com/large/pgc-image/153217454206383eda3edb0" src="http://p1.pstatp.com/large/pgc-image/153217454206383eda3edb0" alt="《站长进小黑屋随后又被C站点名，B站20日的事件引人深思》" /></div>
+<p>即使没看到这条公告，B站的“小将们”也一时间在各大主流社交媒体问候C站，其中一位甚至扬言要……算了这段不写了，总之就是一群学生在闹腾。而那些早已步入社会的成年人则表示“网盘在手资源我有”，随便打开Chrome收藏夹里面的一个网站都能轻松找到自己想要的番剧，但是容我打脸一下。</p>
+<p>早在今年4月份，国家发布了《剑网2018计划》，今年的主题是互联网版权整治，尤其是对于短视频领域和动漫领域的盗版打击，别说你百度云了，连收藏夹里面的网站都要遭殃。</p>
+<div class="pgc-img"><img layer-src="http://p1.pstatp.com/large/pgc-image/153217526591282582117c5" src="http://p1.pstatp.com/large/pgc-image/153217526591282582117c5" alt="《站长进小黑屋随后又被C站点名，B站20日的事件引人深思》" /></div>
+<p>别生气，亲爱的读者朋友，请你把这篇文章看完好吗？</p>
+<p>其实如果说Bishi站长进小黑屋的事件是B站的低俗文化入侵达到了所有热爱B站的朋友无可容忍的地步，那么C站点名B站则是大众文化和小众文化融合出现问题而造成的主流人群所不理解的一次问题大爆发。</p>
+<p>作为中国二次元官方标签的哔哩哔哩，在没大火之前一直是小众文化的聚集地，这里面也诞生了诸如哲学文化等中国本土的小众文化。</p>
+<p>记不起是多少天以前，哔哩哔哩下架了关于哲学文化的一些视频，引起了一些人的抵触。小众文化固然是应该存在的，但是不要玩过度，当时很多萌新都在喷，而老人们则大多无动于衷。就拿我们逗帆的一位客服来说吧，整天刷van之类的话语，除了B站的人没人能看得懂，身边人甚至以为他是蛇精病。</p>
+<p>当一个小众文化继续消极发展，那么等着这个文化就是死胡同。</p>
+<p>B站持续的发展也代表了二次元文化正在走入大众的视野，甚至成为大众文化的一部分，那么请告诉我，大众文化之所以为大众文化是为什么？答案是：这个文化符合绝大多数人的三观，甚至符合这个社会的价值观。</p>
+<p>一些玩梗玩过度的文化，不遭到官方打击也会遭到民众口诛笔伐，例如“我愿用我的X年换你一生阴影”，这种就是玩梗过度，我们不能要求每一个人听到你说的话就回去了解你这句话的深层含义，所以一旦你说出口那么等着你的一定是众人的口水。</p>
+<p>所以在对待一种文化时，劝大家理性看待，因为对这种文化的下意识判断来自于思维的本能和你后天形成的三观，所以这就是为什么有些人作为某种文化的个体反而产生了优越感。如果你作为某种文化的建设者，也不要让其消极发展，因为我前文已经提到过，文化的消极发展等于自身作死。</p>
+<p>那么，从某种文化成为主流来讲，这种文化里面的一些观点也会逐渐被世人所接受，所以那些蕴含正能量的番剧我相信即使现在从B站下架以后也不会永远“网盘见”。</p>
+<p>最后说一句：看事情不要看表面，而要深入其本质，最后别玩梗过度。</p>
+<p><strong>写了这么多，也不要求别的，点个关注点个赞就行，转载请注明原作者江程训。</strong></p>
+]]></content:encoded>
+			<wfw:commentRss>https://censujiang.com/135/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>尴尬向：当主播观看自己上传的第一个视频是什么体验</title>
+		<link>https://censujiang.com/97</link>
+		<comments>https://censujiang.com/97#respond</comments>
+		<pubDate>Sun, 15 Jul 2018 13:36:06 +0000</pubDate>
+		<dc:creator><![CDATA[江程训]]></dc:creator>
+				<category><![CDATA[照骗与相册]]></category>
+		<category><![CDATA[尴尬向]]></category>
+		<category><![CDATA[第一个视频]]></category>
+
+		<guid isPermaLink="false">https://dfjcx.cn/?p=97</guid>
+		<description><![CDATA[当江程训去看自己4年前的第一个视频会怎么样？ 没错，一定是非常尴尬&#8230;.表示已经被以前的自己尬死了 现在我还是个小透明主播啊&#8230;&#8230;（是我太水了），不说了继续写代码了]]></description>
+				<content:encoded><![CDATA[<div id="scontent">
+<div id="preview-pgc" class="wrap1 sclearfix">
+<div id="preview-content" class="center">
+<div class="container-main">
+<div class="article-detail">
+<p class="article-content"><video style="width: 100%; height: 100%;" src="http://v3-tt.ixigua.com/fe506d8d65a5693bc9785bcbc5ebcbc7/5b4b562b/video/m/2201a7bfd2247d6499e9746acc1c9cb408511592a280000c87088eb94a9/" poster="http://p1.pstatp.com/large/pgc-image/15316577682869ac28bf5d8" preload="none" controls="controls" width="300" height="150"></video><br />
+当江程训去看自己4年前的第一个视频会怎么样？ 没错，一定是非常尴尬&#8230;.表示已经被以前的自己尬死了 现在我还是个小透明主播啊&#8230;&#8230;（是我太水了），不说了继续写代码了</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>https://censujiang.com/97/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<enclosure url="http://v3-tt.ixigua.com/fe506d8d65a5693bc9785bcbc5ebcbc7/5b4b562b/video/m/2201a7bfd2247d6499e9746acc1c9cb408511592a280000c87088eb94a9/" length="15862956" type="" />
+		</item>
+		<item>
+		<title>程序员都有哪些绝望的经历</title>
+		<link>https://censujiang.com/90</link>
+		<comments>https://censujiang.com/90#comments</comments>
+		<pubDate>Sun, 01 Jul 2018 10:29:35 +0000</pubDate>
+		<dc:creator><![CDATA[江程训]]></dc:creator>
+				<category><![CDATA[热点观察]]></category>
+		<category><![CDATA[程序员]]></category>
+
+		<guid isPermaLink="false">https://dfjcx.cn/?p=90</guid>
+		<description><![CDATA[程序员的绝望是什么？我觉得从我自身角度大概是这样： 1.从删库到跑路 相信大家会有过因为想要程序执行有某种预期的效果但是不知道怎么弄于是没备份胡乱搞结果把程序和数据库都删掉的事。 这种事情一般发生在各位程序员初学编程的时候。 前几天我还看到一张图，图中的这哥们完全是被坑的。 综上，三脚猫程序员可以概括为：写代码是不可能写代码的，这辈子都不……]]></description>
+				<content:encoded><![CDATA[<p>程序员的绝望是什么？我觉得从我自身角度大概是这样：</p>
+<h1><strong>1.从删库到跑路</strong></h1>
+<p>相信大家会有过因为想要程序执行有某种预期的效果但是不知道怎么弄于是没备份胡乱搞结果把程序和数据库都删掉的事。</p>
+<p>这种事情一般发生在各位程序员初学编程的时候。</p>
+<p>前几天我还看到一张图，图中的这哥们完全是被坑的。</p>
+<div class="pgc-img"><img layer-src="http://p1.pstatp.com/large/912000099851dda4457f" src="http://p1.pstatp.com/large/912000099851dda4457f" alt="《程序员都有哪些绝望的经历》" /></div>
+<p>综上，三脚猫程序员可以概括为：写代码是不可能写代码的，这辈子都不可能写代码的。备份又不会，就是删库这种事情，才能维持得了生活这样子。进管理员模式感觉像回家一样，管理员权限操作的感觉比家里好多了。里面个个文件都有权限，根目录又好删，我超喜欢这里的</p>
+<h1><strong>2.修复了1个bug，新增n+1个bug</strong></h1>
+<p>这个我就没办法概括了。。。。毕竟出现这种情况的原因很复杂，但是大多数不是“亡羊补牢”，而是“拆东墙补西墙”。</p>
+<p>但是你的老板可能不是这么认为：</p>
+<div class="pgc-img"><img layer-src="http://p3.pstatp.com/large/91220007f9d0128adf74" src="http://p3.pstatp.com/large/91220007f9d0128adf74" alt="《程序员都有哪些绝望的经历》" /></div>
+<h1><strong>3.做到一半产品经理改需求</strong></h1>
+<p>程序员成长路上的敌人和好朋友是谁？没错是同一个人：产品经理。</p>
+<p>在这里我想奉劝看到这个帖子的产品经理一句：你TM能不能在最开始的时候想清楚点！不要动不动半路改需求！没看到老子因为这个功能如何实现想了一个晚上吗？！！</p>
+<div class="pgc-img"><img layer-src="http://p3.pstatp.com/large/91230001853fa6e76159" src="http://p3.pstatp.com/large/91230001853fa6e76159" alt="《程序员都有哪些绝望的经历》" /></div>
+<h1><strong>4.身边人是▓▓总以为你是修电脑的</strong></h1>
+<p>程序员作为一个特别专业的职业，又带有二十一世纪的标签互联网，于是总是会被亲朋好友和七大姑八大姨认为是。。。。</p>
+<p>。。。。</p>
+<p>修电脑的</p>
+<p>所以说每当春节，各路程序员回家过年的时候，总是会听到有人对你说：&#8221;xxx，这个我家电脑有问题能不能帮我修一下？&#8221;</p>
+<p>如果你此时想论证一下程序员和修电脑的区别，那你大错特错了，那人会这样反驳你：</p>
+<p>“你不是搞计算机的吗？”</p>
+<div class="pgc-img"><img layer-src="http://p3.pstatp.com/large/91210009a1efe3d6d040" src="http://p3.pstatp.com/large/91210009a1efe3d6d040" alt="《程序员都有哪些绝望的经历》" /></div>
+<p>我他喵。。。。。。</p>
+<h1><strong>已经说得很清楚了用户还是不会用</strong></h1>
+<p>对于某些开发专业领域产品的小伙伴们估计会遇到这个问题。</p>
+<p>明明我已经把技术文档写得这么清楚了为什么用户还是问这问那？</p>
+<p>这个问题先找找自身毛病，是不是自己高估了用户的智商，还是。。。。</p>
+<p>。。。。</p>
+<p>用户真的智商低。</p>
+<p><strong>暂时写到这里吧，欢迎随时在评论区补充</strong></p>
+<p><strong>这里是江程训~看完这篇文章（or回答）不要忘了关注我哦~(๑❛ᴗ❛๑)</strong></p>
+]]></content:encoded>
+			<wfw:commentRss>https://censujiang.com/90/feed</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>从毕业那一天的开始，我就感觉有什么不对</title>
+		<link>https://censujiang.com/88</link>
+		<comments>https://censujiang.com/88#respond</comments>
+		<pubDate>Mon, 18 Jun 2018 13:10:51 +0000</pubDate>
+		<dc:creator><![CDATA[江程训]]></dc:creator>
+				<category><![CDATA[热点观察]]></category>
+		<category><![CDATA[毕业季]]></category>
+
+		<guid isPermaLink="false">https://dfjcx.cn/?p=88</guid>
+		<description><![CDATA[作为人生的第一大考，中考是非常重要的。那么考完之后当然少不了毕业典礼和同学们之间的分别。 我作为一个重庆2018级的考生，我是在14号上午考完中考的，当然的话考完之后就是紧接着是估分，估分之后，我们大概有半天的时间。可以找同学来签名或者说留下联系方式什么的，当然我也找同学签名了，这里说明一下签名册是学校发的，所以说我在这里附上这一本签名册……]]></description>
+				<content:encoded><![CDATA[<p>作为人生的第一大考，中考是非常重要的。那么考完之后当然少不了毕业典礼和同学们之间的分别。</p>
+<p>我作为一个重庆2018级的考生，我是在14号上午考完中考的，当然的话考完之后就是紧接着是估分，估分之后，我们大概有半天的时间。可以找同学来签名或者说留下联系方式什么的，当然我也找同学签名了，这里说明一下签名册是学校发的，所以说我在这里附上这一本签名册的图片。</p>
+<div class="pgc-img"><img layer-src="http://p3.pstatp.com/large/pgc-image/15293273709617f7f25a5e2" src="http://p3.pstatp.com/large/pgc-image/15293273709617f7f25a5e2" alt="《从毕业那一天的开始，我就感觉有什么不对》" /></p>
+<p class="pgc-img-caption">这就是我们学校发的签名册。</p>
+</div>
+<p>这就是我们学校发的签名册。</p>
+<p>可以看出学校真是非常用苦良心了。</p>
+<p>然后呢，我们就各自找同学来签名，留下这一初中的青春回忆。</p>
+<p>如图，签名页大概有三页。为什么我要讲这个事情呢？因为在这里了一个事情。</p>
+<div class="pgc-img"><img layer-src="http://p3.pstatp.com/large/pgc-image/1529327371142e65b58a867" src="http://p3.pstatp.com/large/pgc-image/1529327371142e65b58a867" alt="《从毕业那一天的开始，我就感觉有什么不对》" /></p>
+<p class="pgc-img-caption">前面两页可以摊开到一起。最后一页是单独的</p>
+</div>
+<p>我们班有个身材魁梧的人，不过的话，我没有他的照片。所以说奉上上比利王的图供你们自行想象。</p>
+<div class="pgc-img"><img layer-src="http://p3.pstatp.com/large/pgc-image/15293273712979f6cc5c60d" src="http://p3.pstatp.com/large/pgc-image/15293273712979f6cc5c60d" alt="《从毕业那一天的开始，我就感觉有什么不对》" /></p>
+<p class="pgc-img-caption">图片仅供参考</p>
+</div>
+<p>当我走到他的身边时候，我看到了他那哲学的身姿，我把签名册递给他，他以他那富有磁性的声音对我说：&#8221;江经理，我把名字签到最后，只不过我还附上了一句话，请你回去之后再打开，好吗？&#8221;</p>
+<p>我看到他，连忙点头说：&#8221;好好好！&#8221;</p>
+<p>然后我就找其他人签名了。</p>
+<p>毕业那一天，我们班还发了纪念服。大概长这么个样子。</p>
+<div class="pgc-img"><img layer-src="http://p3.pstatp.com/large/pgc-image/15293273714978db1824e43" src="http://p3.pstatp.com/large/pgc-image/15293273714978db1824e43" alt="《从毕业那一天的开始，我就感觉有什么不对》" /></p>
+<p class="pgc-img-caption">这是正面</p>
+</div>
+<div class="pgc-img"><img layer-src="http://p3.pstatp.com/large/pgc-image/15293273717028e0964253e" src="http://p3.pstatp.com/large/pgc-image/15293273717028e0964253e" alt="《从毕业那一天的开始，我就感觉有什么不对》" /></div>
+<p>那天老班对我们说：&#8221;你们晚上毕业典礼的时候一定要穿这个纪念服啊，全年级可是要走红毯，接受校长们给你们的鲜花的，别搞得特立独行，吊儿郎当的。&#8221;</p>
+<p>我一听反正都是晚上毕业典礼的时候再穿的，我穿着还是有点大，再加上那天天气非常热，穿着感觉有点儿不舒服，所以说我就没有穿多久就脱下来继续穿校服了。</p>
+<p>其实那天下午照毕业照的时候，我还是感觉有点儿异常的，因为我们学校当天是允许家长进入的，但是我不知道为什么一个家长，估计是年级哪个同学的妈妈，在拿着个相机到处照。</p>
+<p>当时我就纳闷儿了，你说毕业了对吧？想留下照片作为自己孩子的纪念。但是你也不可能到处照的这么多吧。我还看到在我们班两个女生自拍的时候，她还把那个场景照了下来，你这个行为就感觉有点儿不文明了。</p>
+<div class="pgc-img"><img layer-src="http://p3.pstatp.com/large/pgc-image/15293273718266c724ada8c" src="http://p3.pstatp.com/large/pgc-image/15293273718266c724ada8c" alt="《从毕业那一天的开始，我就感觉有什么不对》" /></div>
+<p>其实这是个小插曲，那天我下午发的说说里面并没有提到这个。</p>
+<div class="pgc-img"><img layer-src="http://p1.pstatp.com/large/pgc-image/152932737213737483ed65f" src="http://p1.pstatp.com/large/pgc-image/152932737213737483ed65f" alt="《从毕业那一天的开始，我就感觉有什么不对》" /></div>
+<p>只不过是我作为最后一组做清洁的成员要做清洁而已。。。。</p>
+<p>下午我们吃完学校办的自助餐，我们就来到了操场旁边的篮球场。</p>
+<p>当时篮球场上面有个照集体照的场景，但是我没办法给出那个场景具体是什么样子，不过这无所谓，那天我们班全班都在那里再照了一张班级照。</p>
+<p>照之前，我旁边的同学问我：&#8221;你为什么不穿我们班发的那个纪念服呢？&#8221;我摊摊手说到&#8221;反正等会儿等走红毯的时候再穿吧。&#8221;</p>
+<p>俗话说得好，细节决定成败。我就是毁在细节上，这是后话了。</p>
+<p>受到文章篇幅限制以及文章必须围绕题目来写否则会造成题偏题的缘故，关于毕业典礼的我就一笔带过。</p>
+<p>反正毕业典礼刚开始，我们都笑得很开心。但是毕业典礼结束的时候我们都哭的稀里哗啦的。</p>
+<p>回到家后，在毕业典礼哭完的我打开这个签名册，我想起了那位长得像比利王的同学给我说的一句话。</p>
+<p>&#8220;江经理，我把名字签到最后，只不过我还附上了一句话，请你回去之后再打开，好吗？&#8221;</p>
+<p>我满怀着激动的心情打开，却看到这样一行字。</p>
+<div class="pgc-img"><img layer-src="http://p9.pstatp.com/large/pgc-image/1529327372324d96e8cea91" src="http://p9.pstatp.com/large/pgc-image/1529327372324d96e8cea91" alt="《从毕业那一天的开始，我就感觉有什么不对》" /></div>
+<p>我***的但说我一天到晚王者荣耀打得烂就会只玩奇迹暖暖，但是我也不是那些现在要整天想着在现实世界制造出二次元人物的那种人啊！！！！</p>
+<div class="pgc-img"><img layer-src="http://p3.pstatp.com/large/pgc-image/15293273724525e363ab266" src="http://p3.pstatp.com/large/pgc-image/15293273724525e363ab266" alt="《从毕业那一天的开始，我就感觉有什么不对》" /></div>
+<p>况且，虽然说我在奇迹暖暖里面氪金，但是我也没把暖暖当我老婆呀！她只是一个成天让我给她买漂亮衣服的败家女儿！！！！！</p>
+<div class="pgc-img"><img layer-src="http://p9.pstatp.com/large/pgc-image/152932737258070a9a525d5" src="http://p9.pstatp.com/large/pgc-image/152932737258070a9a525d5" alt="《从毕业那一天的开始，我就感觉有什么不对》" /></p>
+<p class="pgc-img-caption">WQNMD!!!</p>
+</div>
+<p>当时看到他这句话其实非常想打他，但是想了想还是算了。</p>
+<p>1.毕竟同学一场。</p>
+<p>2.我现在在哪里找他？</p>
+<p>3.他这个比利王身材会不会把我肛了？？？</p>
+<p>但是事情远远没有完，今天我在写代码。</p>
+<div class="pgc-img"><img layer-src="http://p1.pstatp.com/large/pgc-image/1529327373875a1b41c0ab6" src="http://p1.pstatp.com/large/pgc-image/1529327373875a1b41c0ab6" alt="《从毕业那一天的开始，我就感觉有什么不对》" /></p>
+<p class="pgc-img-caption">别看我写的什么，看文章。</p>
+</div>
+<p>突然有个同学给我发了这样一条消息。</p>
+<div class="pgc-img"><img layer-src="http://p1.pstatp.com/large/pgc-image/152932737417696b65aecd3" src="http://p1.pstatp.com/large/pgc-image/152932737417696b65aecd3" alt="《从毕业那一天的开始，我就感觉有什么不对》" /></div>
+<p>当时我是懵逼的，这是什么情况？</p>
+<div class="pgc-img"><img layer-src="http://p3.pstatp.com/large/pgc-image/1529327374305ea11f4fa63" src="http://p3.pstatp.com/large/pgc-image/1529327374305ea11f4fa63" alt="《从毕业那一天的开始，我就感觉有什么不对》" /></div>
+<p>我点进去一看的时候，刚开始感觉还没什么。</p>
+<div class="pgc-img"><img layer-src="http://p9.pstatp.com/large/pgc-image/152932737472774f26dc3a9" src="http://p9.pstatp.com/large/pgc-image/152932737472774f26dc3a9" alt="《从毕业那一天的开始，我就感觉有什么不对》" /></div>
+<p>居然有媒体报道，我们学校诶~</p>
+<p>我翻一翻这个新闻，刚开始我感觉还没有什么问题。</p>
+<p>然后，我看见了这个</p>
+<div class="pgc-img"><img layer-src="http://p9.pstatp.com/large/pgc-image/152932737504718cf6a6538" src="http://p9.pstatp.com/large/pgc-image/152932737504718cf6a6538" alt="《从毕业那一天的开始，我就感觉有什么不对》" /></div>
+<p>这不是我们班那两个女生自！拍！的！场！景！吗？！！</p>
+<p>我的心里越发焦躁起来。然后我手指一滑，看到了这个。</p>
+<div class="pgc-img"><img layer-src="http://p3.pstatp.com/large/pgc-image/1529327375307926df7f6f9" src="http://p3.pstatp.com/large/pgc-image/1529327375307926df7f6f9" alt="《从毕业那一天的开始，我就感觉有什么不对》" /></div>
+<p>？？？？怎么感觉那个穿黑衣服的好显眼呢？</p>
+<div class="pgc-img"><img layer-src="http://p9.pstatp.com/large/pgc-image/1529327375593c859e16d98" src="http://p9.pstatp.com/large/pgc-image/1529327375593c859e16d98" alt="《从毕业那一天的开始，我就感觉有什么不对》" /></div>
+<div class="pgc-img"><img layer-src="http://p3.pstatp.com/large/pgc-image/152932737605876df9615cd" src="http://p3.pstatp.com/large/pgc-image/152932737605876df9615cd" alt="《从毕业那一天的开始，我就感觉有什么不对》" /></div>
+<div class="pgc-img"><img layer-src="http://p1.pstatp.com/large/pgc-image/1529327376282f253954fa8" src="http://p1.pstatp.com/large/pgc-image/1529327376282f253954fa8" alt="《从毕业那一天的开始，我就感觉有什么不对》" /></div>
+<div class="pgc-img"><img layer-src="http://p3.pstatp.com/large/pgc-image/15293273763959a032cf94e" src="http://p3.pstatp.com/large/pgc-image/15293273763959a032cf94e" alt="《从毕业那一天的开始，我就感觉有什么不对》" /></div>
+<div class="pgc-img"><img layer-src="http://p3.pstatp.com/large/pgc-image/15293273765358bc754b3dd" src="http://p3.pstatp.com/large/pgc-image/15293273765358bc754b3dd" alt="《从毕业那一天的开始，我就感觉有什么不对》" /></div>
+<p>这！难！道！不！是！我！吗？！！</p>
+<p>新华网的摄像师你拍我们班干嘛？你即使拍我们班那为什么把我拍的这么显眼？最关键是你为什么还把我摊手的动作给拍了下来？最最关键是你为什么把我拍的贼丑？？？</p>
+<div class="pgc-img"><img layer-src="http://p1.pstatp.com/large/pgc-image/1529327376674bef6a3e579" src="http://p1.pstatp.com/large/pgc-image/1529327376674bef6a3e579" alt="《从毕业那一天的开始，我就感觉有什么不对》" /></div>
+<p>我定睛一看</p>
+<div class="pgc-img"><img layer-src="http://p3.pstatp.com/large/pgc-image/1529327376854eafeabb2e1" src="http://p3.pstatp.com/large/pgc-image/1529327376854eafeabb2e1" alt="《从毕业那一天的开始，我就感觉有什么不对》" /></div>
+<p>这位摄像师，虽然我之前误会你了，但现在我记住你的名字了，希望我们以后再也不会见面。</p>
+<div class="pgc-img"><img layer-src="http://p3.pstatp.com/large/pgc-image/15293273769614235ff2326" src="http://p3.pstatp.com/large/pgc-image/15293273769614235ff2326" alt="《从毕业那一天的开始，我就感觉有什么不对》" /></div>
+<p>毕个业事情这么多。。。我还是继续学习吧。。。</p>
+<p>ps：写了这么多还是点个关注吧。。。我叫江程训，转载的时候记得把这句话加上。</p>
+]]></content:encoded>
+			<wfw:commentRss>https://censujiang.com/88/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>没经费时请不起插画师怎么办？程序员的灵魂绘画</title>
+		<link>https://censujiang.com/86</link>
+		<comments>https://censujiang.com/86#comments</comments>
+		<pubDate>Sat, 31 Mar 2018 11:14:41 +0000</pubDate>
+		<dc:creator><![CDATA[江程训]]></dc:creator>
+				<category><![CDATA[看点与见解]]></category>
+
+		<guid isPermaLink="false">https://dfjcx.cn/?p=86</guid>
+		<description><![CDATA[因为团队没经费请插画师绘画，所以说团队的新项目就只好找内部人员画插画 这是我的人设构思，然后就没有然后了，我画到这一步已经很不错了。 然后我发到最右里面，发起了投票 当时很多人都以为我画的是狐妖，其实。。。 我画的是哈士奇精，哈哈哈哈哈哈 惊不惊喜？ 意不意外？ 刺不刺激？ 当然也有同行来吐槽的。 所以说我该不该找老板要两份工资？ 最后，……]]></description>
+				<content:encoded><![CDATA[<p>因为团队没经费请插画师绘画，所以说团队的新项目就只好找内部人员画插画</p>
+<p><img layer-src="http://p1.pstatp.com/large/pgc-image/15219006198895f55a5e04c" src="http://p1.pstatp.com/large/pgc-image/15219006198895f55a5e04c" alt="《没经费时请不起插画师怎么办？程序员的灵魂绘画》" />这是我的人设构思，然后就没有然后了，我画到这一步已经很不错了。</p>
+<p>然后我发到最右里面，发起了投票<br />
+<img layer-src="http://p1.pstatp.com/large/pgc-image/1521900744368a6b6bb1b64" src="http://p1.pstatp.com/large/pgc-image/1521900744368a6b6bb1b64" alt="《没经费时请不起插画师怎么办？程序员的灵魂绘画》" />当时很多人都以为我画的是狐妖，其实。。。<br />
+<img layer-src="http://p1.pstatp.com/large/pgc-image/1521900782265fcdb646eda" src="http://p1.pstatp.com/large/pgc-image/1521900782265fcdb646eda" alt="《没经费时请不起插画师怎么办？程序员的灵魂绘画》" />我画的是哈士奇精，哈哈哈哈哈哈</p>
+<p>惊不惊喜？</p>
+<p>意不意外？</p>
+<p>刺不刺激？</p>
+<p>当然也有同行来吐槽的。<br />
+<img layer-src="http://p1.pstatp.com/large/pgc-image/1521900860718e7c3969c80" src="http://p1.pstatp.com/large/pgc-image/1521900860718e7c3969c80" alt="《没经费时请不起插画师怎么办？程序员的灵魂绘画》" />所以说我该不该找老板要两份工资？</p>
+<p>最后，附上人设的成品</p>
+<p><img layer-src="http://p3.pstatp.com/large/pgc-image/15219009327966cd8deff4e" src="http://p3.pstatp.com/large/pgc-image/15219009327966cd8deff4e" alt="《没经费时请不起插画师怎么办？程序员的灵魂绘画》" />算了。。。我还是自费找插画师吧</p>
+]]></content:encoded>
+			<wfw:commentRss>https://censujiang.com/86/feed</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>一个奇迹暖暖人民币玩家的日常Part1</title>
+		<link>https://censujiang.com/79</link>
+		<comments>https://censujiang.com/79#respond</comments>
+		<pubDate>Thu, 20 Jul 2017 14:51:10 +0000</pubDate>
+		<dc:creator><![CDATA[江程训]]></dc:creator>
+				<category><![CDATA[生活]]></category>
+		<category><![CDATA[看点与见解]]></category>
+
+		<guid isPermaLink="false">https://dfjcx.cn/?p=79</guid>
+		<description><![CDATA[]]></description>
+				<content:encoded><![CDATA[<p><iframe src="//player.bilibili.com/player.html?aid=12402095&amp;cid=20422035&amp;page=1" frameborder="no" scrolling="no" allowfullscreen="allowfullscreen"> </iframe></p>
+]]></content:encoded>
+			<wfw:commentRss>https://censujiang.com/79/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>可塑性记忆PSV游戏视频录像</title>
+		<link>https://censujiang.com/76</link>
+		<comments>https://censujiang.com/76#respond</comments>
+		<pubDate>Mon, 17 Jul 2017 18:39:19 +0000</pubDate>
+		<dc:creator><![CDATA[江程训]]></dc:creator>
+				<category><![CDATA[生活]]></category>
+		<category><![CDATA[看点与见解]]></category>
+
+		<guid isPermaLink="false">https://dfjcx.cn/?p=76</guid>
+		<description><![CDATA[传送门，视频太多懒得传https://www.bilibili.com/video/av12302955/?p=1]]></description>
+				<content:encoded><![CDATA[<p>传送门，视频太多懒得传<a href="https://www.bilibili.com/video/av12302955/?p=1" target="_blank"  rel="nofollow" >https://www.bilibili.com/video/av12302955/?p=1</a></p>
+]]></content:encoded>
+			<wfw:commentRss>https://censujiang.com/76/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>埃罗芒阿老师-OP&#038;ED(piano ver.)-BY江程训</title>
+		<link>https://censujiang.com/73</link>
+		<comments>https://censujiang.com/73#respond</comments>
+		<pubDate>Mon, 17 Jul 2017 03:30:41 +0000</pubDate>
+		<dc:creator><![CDATA[江程训]]></dc:creator>
+				<category><![CDATA[生活]]></category>
+		<category><![CDATA[看点与见解]]></category>
+
+		<guid isPermaLink="false">https://dfjcx.cn/?p=73</guid>
+		<description><![CDATA[]]></description>
+				<content:encoded><![CDATA[<p><iframe src="//player.bilibili.com/player.html?aid=12267216&#038;cid=20213561&#038;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><br />
+<iframe src="//player.bilibili.com/player.html?aid=12267216&#038;cid=20267850&#038;page=2" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe></p>
+]]></content:encoded>
+			<wfw:commentRss>https://censujiang.com/73/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>iOS10评测视频，感觉UI不错</title>
+		<link>https://censujiang.com/65</link>
+		<comments>https://censujiang.com/65#respond</comments>
+		<pubDate>Fri, 26 Aug 2016 16:00:26 +0000</pubDate>
+		<dc:creator><![CDATA[江程训]]></dc:creator>
+				<category><![CDATA[生活]]></category>
+		<category><![CDATA[看点与见解]]></category>
+
+		<guid isPermaLink="false">https://dfjcx.cn/?p=65</guid>
+		<description><![CDATA[]]></description>
+				<content:encoded><![CDATA[<p><embed src='http://player.youku.com/player.php/sid/XMTcwMjQ5NzE5Mg==/v.swf' allowFullScreen='true' quality='high' width='480' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed></p>
+]]></content:encoded>
+			<wfw:commentRss>https://censujiang.com/65/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>世外桃源</title>
+		<link>https://censujiang.com/71</link>
+		<comments>https://censujiang.com/71#respond</comments>
+		<pubDate>Tue, 26 Jul 2016 16:00:14 +0000</pubDate>
+		<dc:creator><![CDATA[江程训]]></dc:creator>
+				<category><![CDATA[生活]]></category>
+		<category><![CDATA[看点与见解]]></category>
+
+		<guid isPermaLink="false">https://dfjcx.cn/?p=71</guid>
+		<description><![CDATA[]]></description>
+				<content:encoded><![CDATA[<p><embed src='http://player.youku.com/player.php/sid/XMTY2MDY2MjEwOA==/v.swf' allowFullScreen='true' quality='high' width='480' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed></p>
+]]></content:encoded>
+			<wfw:commentRss>https://censujiang.com/71/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>诡室</title>
+		<link>https://censujiang.com/69</link>
+		<comments>https://censujiang.com/69#respond</comments>
+		<pubDate>Sat, 28 May 2016 16:00:25 +0000</pubDate>
+		<dc:creator><![CDATA[江程训]]></dc:creator>
+				<category><![CDATA[生活]]></category>
+		<category><![CDATA[看点与见解]]></category>
+
+		<guid isPermaLink="false">https://dfjcx.cn/?p=69</guid>
+		<description><![CDATA[]]></description>
+				<content:encoded><![CDATA[<p><embed src='http://player.youku.com/player.php/sid/XMTU4ODQ2MzMyMA==/v.swf' allowFullScreen='true' quality='high' width='480' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed></p>
+]]></content:encoded>
+			<wfw:commentRss>https://censujiang.com/69/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>啦啦啦不知道取什么名字的电音</title>
+		<link>https://censujiang.com/67</link>
+		<comments>https://censujiang.com/67#respond</comments>
+		<pubDate>Thu, 19 May 2016 16:00:56 +0000</pubDate>
+		<dc:creator><![CDATA[江程训]]></dc:creator>
+				<category><![CDATA[生活]]></category>
+		<category><![CDATA[看点与见解]]></category>
+
+		<guid isPermaLink="false">https://dfjcx.cn/?p=67</guid>
+		<description><![CDATA[]]></description>
+				<content:encoded><![CDATA[<p><embed src='http://player.youku.com/player.php/sid/XMTU3Nzg4Nzg4OA==/v.swf' allowFullScreen='true' quality='high' width='480' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed></p>
+]]></content:encoded>
+			<wfw:commentRss>https://censujiang.com/67/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>(MC)城市+自生建筑mod，加个mod终于有方向感</title>
+		<link>https://censujiang.com/62</link>
+		<comments>https://censujiang.com/62#respond</comments>
+		<pubDate>Wed, 15 Jul 2015 16:00:06 +0000</pubDate>
+		<dc:creator><![CDATA[江程训]]></dc:creator>
+				<category><![CDATA[生活]]></category>
+		<category><![CDATA[看点与见解]]></category>
+
+		<guid isPermaLink="false">https://dfjcx.cn/?p=62</guid>
+		<description><![CDATA[]]></description>
+				<content:encoded><![CDATA[<p><embed src='http://player.youku.com/player.php/sid/XMTI4NjM1NTM3Mg==/v.swf' allowFullScreen='true' quality='high' width='480' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed></p>
+]]></content:encoded>
+			<wfw:commentRss>https://censujiang.com/62/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>(Minecraft)城市mod生存ep1，一玩即晕</title>
+		<link>https://censujiang.com/60</link>
+		<comments>https://censujiang.com/60#respond</comments>
+		<pubDate>Tue, 14 Jul 2015 16:00:12 +0000</pubDate>
+		<dc:creator><![CDATA[江程训]]></dc:creator>
+				<category><![CDATA[生活]]></category>
+		<category><![CDATA[看点与见解]]></category>
+
+		<guid isPermaLink="false">https://dfjcx.cn/?p=60</guid>
+		<description><![CDATA[]]></description>
+				<content:encoded><![CDATA[<p><embed src='http://player.youku.com/player.php/sid/XMTI4NTU4MjI3Mg==/v.swf' allowFullScreen='true' quality='high' width='480' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed></p>
+]]></content:encoded>
+			<wfw:commentRss>https://censujiang.com/60/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>（360p1）想开服的小伙伴请观看！最实用的开服教程</title>
+		<link>https://censujiang.com/58</link>
+		<comments>https://censujiang.com/58#respond</comments>
+		<pubDate>Tue, 16 Jun 2015 16:00:28 +0000</pubDate>
+		<dc:creator><![CDATA[江程训]]></dc:creator>
+				<category><![CDATA[生活]]></category>
+		<category><![CDATA[看点与见解]]></category>
+
+		<guid isPermaLink="false">https://dfjcx.cn/?p=58</guid>
+		<description><![CDATA[]]></description>
+				<content:encoded><![CDATA[<p><embed src='http://player.youku.com/player.php/sid/XMTI2NDY2NzA0NA==/v.swf' allowFullScreen='true' quality='high' width='480' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed></p>
+]]></content:encoded>
+			<wfw:commentRss>https://censujiang.com/58/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>（Minecraft）两只基佬生存第一弹</title>
+		<link>https://censujiang.com/56</link>
+		<comments>https://censujiang.com/56#respond</comments>
+		<pubDate>Sun, 14 Jun 2015 16:00:53 +0000</pubDate>
+		<dc:creator><![CDATA[江程训]]></dc:creator>
+				<category><![CDATA[生活]]></category>
+		<category><![CDATA[看点与见解]]></category>
+
+		<guid isPermaLink="false">https://dfjcx.cn/?p=56</guid>
+		<description><![CDATA[]]></description>
+				<content:encoded><![CDATA[<p><embed src="http://player.youku.com/player.php/sid/XMTI2MzE5Nzc4NA==/v.swf" type="application/x-shockwave-flash" width="480" height="400" align="middle"></embed></p>
+]]></content:encoded>
+			<wfw:commentRss>https://censujiang.com/56/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>（Minecraft）NB地图</title>
+		<link>https://censujiang.com/54</link>
+		<comments>https://censujiang.com/54#respond</comments>
+		<pubDate>Sat, 11 Apr 2015 16:00:39 +0000</pubDate>
+		<dc:creator><![CDATA[江程训]]></dc:creator>
+				<category><![CDATA[生活]]></category>
+		<category><![CDATA[看点与见解]]></category>
+
+		<guid isPermaLink="false">https://dfjcx.cn/?p=54</guid>
+		<description><![CDATA[]]></description>
+				<content:encoded><![CDATA[<p><embed src="http://player.youku.com/player.php/sid/XOTMyNTQzMTY0/v.swf" type="application/x-shockwave-flash" width="480" height="400" align="middle"></embed></p>
+]]></content:encoded>
+			<wfw:commentRss>https://censujiang.com/54/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>麦王玩起服务器，惨遭怪物追杀</title>
+		<link>https://censujiang.com/51</link>
+		<comments>https://censujiang.com/51#respond</comments>
+		<pubDate>Sat, 18 Oct 2014 16:00:42 +0000</pubDate>
+		<dc:creator><![CDATA[江程训]]></dc:creator>
+				<category><![CDATA[生活]]></category>
+		<category><![CDATA[看点与见解]]></category>
+
+		<guid isPermaLink="false">https://dfjcx.cn/?p=51</guid>
+		<description><![CDATA[]]></description>
+				<content:encoded><![CDATA[<p><embed width="880" height="495" src="http://www.aipai.com/c23/PDwiJCoqJiRqJWQhKQ/playerOut.swf" quality="high" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"/></p>
+]]></content:encoded>
+			<wfw:commentRss>https://censujiang.com/51/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>17学堂（4）</title>
+		<link>https://censujiang.com/49</link>
+		<comments>https://censujiang.com/49#respond</comments>
+		<pubDate>Sun, 05 Oct 2014 01:00:25 +0000</pubDate>
+		<dc:creator><![CDATA[江程训]]></dc:creator>
+				<category><![CDATA[生活]]></category>
+		<category><![CDATA[看点与见解]]></category>
+
+		<guid isPermaLink="false">https://dfjcx.cn/?p=49</guid>
+		<description><![CDATA[]]></description>
+				<content:encoded><![CDATA[<p><embed width="880" height="495" src="http://www.aipai.com/c23/PDwiJCoqJiRqJWQhKQ/playerOut.swf" quality="high" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"/></p>
+]]></content:encoded>
+			<wfw:commentRss>https://censujiang.com/49/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>17学堂（3）</title>
+		<link>https://censujiang.com/47</link>
+		<comments>https://censujiang.com/47#respond</comments>
+		<pubDate>Sat, 04 Oct 2014 16:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[江程训]]></dc:creator>
+				<category><![CDATA[生活]]></category>
+		<category><![CDATA[看点与见解]]></category>
+
+		<guid isPermaLink="false">https://dfjcx.cn/?p=47</guid>
+		<description><![CDATA[]]></description>
+				<content:encoded><![CDATA[<p><embed src="http://www.aipai.com/c23/PDwiJCokJiVqJWQuLQ/playerOut.swf" type="application/x-shockwave-flash" width="880" height="495" align="middle"></embed></p>
+]]></content:encoded>
+			<wfw:commentRss>https://censujiang.com/47/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>创世王者mc几分钟一起跟我做。【1】</title>
+		<link>https://censujiang.com/44</link>
+		<comments>https://censujiang.com/44#respond</comments>
+		<pubDate>Tue, 20 May 2014 16:00:53 +0000</pubDate>
+		<dc:creator><![CDATA[江程训]]></dc:creator>
+				<category><![CDATA[生活]]></category>
+		<category><![CDATA[看点与见解]]></category>
+
+		<guid isPermaLink="false">https://dfjcx.cn/?p=44</guid>
+		<description><![CDATA[]]></description>
+				<content:encoded><![CDATA[<p><embed width="880" height="495" src="http://www.aipai.com/c14/PD4pISYmISZqJWQgIg/playerOut.swf" quality="high" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"/></p>
+]]></content:encoded>
+			<wfw:commentRss>https://censujiang.com/44/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>
